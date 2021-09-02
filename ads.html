@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>nömrə.net</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="style/hamburgers.css">
+	<link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<body class="position-relative">
+	<!-- header -->
+
+	<header class="bg-grey">
+		<div class="container py-3">
+			<div class="row justify-content-between align-items-center">
+
+				<div class="col-lg-2 col-md-2 col-xs-12  my-md-4 ">
+					<a href="./index.html"><img src="./img/logonumber.png" class="" style="width: 60px;" alt=""></a>
+				</div>
+				<div class="col-lg-7 my-sm-3">
+					<div class="row d-flex align-items-center justify-content-between">
+						<div class="col-lg-6 col-md-6">
+							<div class="row">
+								<div class="col-6">
+									<ul
+										class="nav  d-lg-flex justify-content-between align-items-center navbar-top-links navbar-right">
+										<li class="list-unstyled justify-content-center">
+											<a href="./login.html" class="text-decoration-none" data-toggle="modal"
+												data-target=".exampleModallogin">
+												<img src="./img/loginn.png" alt="">
+												<span class="fs-lg-13  text-dark ">Daxil Olun</span>
+											</a>
+										</li>
+
+										<div class="modal shadow rounded fade exampleModallogin p-5 my-5modal fade in"
+											id="login_page" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalLabel" aria-hidden="false">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header justify-content-center py-3">
+														<div class="modal-title text-center" id="exampleModalLabel">
+															<h5>www.nomre.net'a Daxil olun</h5>
+															<p class="m-0">Ən yaxşı nömrələri ən uyğun qiymətlərə tapın!
+															</p>
+														</div>
+
+													</div>
+													<div class="modal-body p-3">
+														<div class="row d-flex justify-content-center">
+															<div class="col-10 text-center">
+																<form action="" id="requestacallform" method="POST"
+																	name="requesttacallform">
+																	<div class="form-group">
+																		<div class="input-group">
+																			<input type="email" class="form-control"
+																				placeholder="Email" name="email"
+																				onchange="validateEmailAdd();" />
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<div class="input-group">
+																			<input type="password" class="form-control"
+																				placeholder="Şifrə" name="password"
+																				onchange="validatePasswordAdd();" />
+																		</div>
+																	</div>
+																</form>
+																<div class="row mb-4 ">
+																	<div class="col-md-6 d-flex justify-content-center">
+
+																		<div class="form-check pl-0 mb-3">
+																			<input type="checkbox"
+																				class="form-check-input filled-in"
+																				id="new">
+																			<label
+																				class=" form-check-label small card-link-secondary"
+																				for="new">Məni xatirla</label>
+																		</div>
+
+																	</div>
+
+																	<div class="col-md-6 ">
+																		<a href="#!"
+																			class=" text-decoration-none fs-lg-14">Şifrəni
+																			unutmusuz?</a>
+																	</div>
+																</div>
+																<button type="submit"
+																	class="btn btn-outline submit-btn w-100 shadow">Daxil
+																	olun</button>
+															</div>
+														</div>
+
+													</div>
+													<div class="modal-footer justify-content-center">
+														<a href="" class="text-decoration-none "
+															data-target="#register_page" data-toggle="modal">Saytda
+															hesabınız yoxdursa, qeydiyyatdan
+															keçin</a>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</ul>
+								</div>
+								<div class="col-6 d-flex justify-content-end ">
+									<ul
+										class="nav  d-lg-flex justify-content-between align-items-center navbar-top-links navbar-right">
+										<li class="list-unstyled  justify-content-center">
+											<a href="./signup.html" class="text-decoration-none" data-toggle="modal"
+												data-target=".exampleModalsignup">
+												<img src="./img/user.png" alt="">
+												<span class="fs-lg-13   text-dark ">Qeydiyyat</span>
+											</a>
+										</li>
+
+										<div class="modal shadow rounded fade exampleModalsignup p-5 my-5modal fade z"
+											id="register_page" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalLabel" aria-hidden="true">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header justify-content-center ">
+														<div class="modal-title text-center" id="exampleModalLabel">
+															<p class="m-0">Saytda qeydiyyatdan keçdikdən sonra
+																satdığınız və ya
+																almaq
+																istədiyiniz nömrənin elanını verə bilərsiz.
+															</p>
+														</div>
+
+													</div>
+													<div class="modal-body p-3">
+														<div class="row d-flex justify-content-center">
+															<div class="col-10 text-center">
+																<form action="" id="requestacallform" method="POST"
+																	class="needs-validation" novalidate
+																	name="requesttacallform">
+																	<div class="row">
+																		<div class="col-6">
+																			<div class="form-group">
+																				<div class="input-group">
+																					<input type="text"
+																						class="form-control"
+																						placeholder="Ad" name="text">
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-6">
+																			<div class="form-group">
+																				<div class="input-group">
+																					<input type="text"
+																						class="form-control"
+																						placeholder="Soyad" name="text">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<div class="input-group">
+																			<input type="email" class="form-control"
+																				placeholder="Email" name="email"
+																				onchange="validateEmailAdd();">
+																		</div>
+																	</div>
+
+																	<div class="form-group">
+																		<div class="input-group">
+																			<input type="number" class="form-control"
+																				placeholder="Əlaqə nömrəsi daxil edin"
+																				name="number">
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<div class="input-group">
+																			<input type="password" class="form-control"
+																				placeholder="Şifrə" name="password"
+																				onchange="validatePasswordAdd();">
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<div class="input-group">
+																			<input type="password" class="form-control"
+																				placeholder="Şifrəni təkrar yazın"
+																				name="password">
+																		</div>
+																	</div>
+																</form>
+
+																<button type="submit"
+																	class="btn btn-outline submit-btn w-100 shadow">Qeydiyyat</button>
+															</div>
+														</div>
+
+													</div>
+													<div class="modal-footer justify-content-center">
+														<a href="" class="text-decoration-none "
+															data-target="#login_page" data-toggle="modal">Saytda
+															qeydiyyasınız varsa,daxil olun</a>
+													</div>
+
+												</div>
+											</div>
+										</div>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5 col-md-5">
+							<ul
+								class="nav  d-lg-flex justify-content-between align-items-center navbar-top-links navbar-right">
+								<li>
+									<a href="./" class="text-decoration-none" data-toggle="modal"
+										data-target=".exampleModalsignup">
+
+										<button class="add-btn add-btn-1 d-flex align-items-center  ">
+											<i class="fas fa-plus text-white mr-2" style="font-size: 8px; "></i>
+											<span class="fs-lg-14 ">Elan yerləşdir</span>
+										</button>
+									</a>
+								</li>
+								<li>
+									<div class="hamburger hamburger--spring position-relative z " id="open_menu"
+										style="top: -9px;">
+										<div class="hamburger-box">
+											<div class="hamburger-inner z"></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="mobile_menu" class="bg-purple z-100 position-absolute left-100 w-100 t-5 h-100 top-0 pt-100">
+		<ul class="m-5 list-unstyled">
+			<li class="mt-5 mb-4 ">
+				<i class="fas fa-route text-white mr-3 fs-sm-18 fs-lg-20"></i>
+				<a hrf="./asannomre.html" class="text-decoration-none text-white my-5 fs-lg-20 fs-sm-18">Asan nömrə</a>
+			</li>
+			<li class="my-4">
+				<i class="fas fa-briefcase text-white mr-3 fs-sm-18 fs-lg-20"></i>
+				<a href="./koporativnomre.html"
+					class="text-decoration-none text-white  my-5 fs-lg-20 fs-sm-18">Korporativ
+					nömrə</a>
+			</li>
+			<hr class="bg-light">
+			<li class="my-4">
+				<i class="fas fa-bullhorn text-white mr-3 fs-sm-18 fs-lg-20"></i>
+				<a href="./campaigns.html"
+					class="text-decoration-none text-white my-5 fs-lg-20 fs-sm-18">Kampaniyalar</a>
+			</li>
+			<li class="my-4">
+				<i class="far fa-handshake text-white mr-3 fs-sm-18 fs-lg-20"></i>
+				<a href="#" class="text-decoration-none text-white my-5 fs-lg-20 fs-sm-18">Əməkdaşlıq və digər
+					məsələlər</a>
+			</li>
+			<li class="my-4">
+				<i class="fas fa-user-md text-white mr-3 fs-sm-18 fs-lg-20"></i>
+				<a href="#" class="text-decoration-none text-white my-5 fs-lg-20 fs-sm-18">Vakansiyalar</a>
+			</li>
+			<li class="my-4">
+				<i class="fas fa-info-circle text-white mr-3 fs-sm-18 fs-lg-20"></i>
+				<a href="#" class="text-decoration-none text-white my-5 fs-lg-20 fs-sm-18">Haqqimizda</a>
+			</li>
+			<hr class="bg-light">
+			<li class="my-4">
+				<i class="fas fa-list-ol text-white mr-3 fs-sm-18 fs-lg-20"></i>
+				<a href="#" class="text-decoration-none text-white my-5 fs-lg-20 fs-sm-18">Satılan nömrələr</a>
+			</li>
+			<li class="my-4">
+				<i class="fas fa-car text-white mr-3 fs-sm-18 fs-lg-20"></i>
+				<a href="#" class="text-decoration-none text-white my-5 fs-lg-20 fs-sm-18">Bütün avtomobil nömrələri</a>
+			</li>
+			<li class="my-4">
+				<i class="fas fa-search text-white mr-3 fs-sm-18 fs-lg-20"></i>
+				<a href="#" class="text-decoration-none text-white my-5 fs-lg-20 fs-sm-18">Axtarılan nömrələr</a>
+			</li>
+			<li class="my-4">
+				<i class="far fa-gem text-white mr-3 fs-sm-18 fs-lg-20"></i>
+				<a href="#" class="text-decoration-none text-white my-5 fs-lg-20 fs-sm-18">VİP nömrələr</a>
+			</li>
+			<li class="my-4">
+				<i class="fas fa-question text-white mr-3 fs-sm-18 fs-lg-20"></i>
+				<a href="#" class="text-decoration-none text-white my-5 fs-lg-20 fs-sm-18">Qaydalar</a>
+			</li>
+			<li class="my-4">
+				<i class="fas fa-file-signature text-white mr-3 fs-sm-18 fs-lg-20"></i>
+				<a href="#" class="text-decoration-none text-white my-5 fs-lg-20 fs-sm-18">Əlaqə</a>
+			</li>
+		</ul>
+	</div>
+	<div class="bg-search-purple">
+		<div class="container">
+			<div class="row  d-flex justify-content-around align-items-center ">
+				<div class="col-10 serch-table">
+					<div class="row d-flex justify-content-around align-items-center my-3">
+						<div class="dropdown_td my-2 col-lg-2 col-md-6 col-xs-6 btn-group bootstrap-select">
+							<select id="how_search" class="selectpicker shadow rounded p-2 " name="search_type"
+								tabindex="-98" style="width: 100%; background-color: white;">
+								<option selected="" value="1">Satılır</option>
+								array(0) {
+								}
+								<option value="0">Olsa alaram</option>
+							</select>
+						</div>
+						<div class="prefiks my-2 col-lg-2 col-md-6 col-xs-6">
+							<select name="search_prefix[]" id="bahman" data-selected-text-format="count"
+								data-live-search="true" tabindex="-98" class="shadow rounded p-2"
+								style="width: 100%;background-color: white;">
+								<optgroup class="selectpicker-s" label="Bütün operatorlar">
+									<option value="all" selected="selected">Prefiks </option>
+								</optgroup>
+
+
+								<optgroup class="selectpicker-s" label="Azercell">
+									<option value="1">50</option>
+									<option value="2">51</option>
+									<option value="3">10</option>
+									<option value="1 / 2 / 3">
+										50 / 51 / 10
+									</option>
+								</optgroup>
+
+								<optgroup class="selectpicker-s" label="Azercell">
+									<option value="1">50</option>
+									<option value="2">51</option>
+									<option value="3">10</option>
+									<option value="1 / 2 / 3">
+										50 / 51 / 10
+									</option>
+								</optgroup>
+								<optgroup class="selectpicker-s" label="Bakcell">
+									<option value="4">55</option>
+									<option value="5">99</option>
+									<option value="4 / 5">
+										55 / 99
+									</option>
+								</optgroup>
+								<optgroup class="selectpicker-s" label="Nar">
+									<option value="9">70</option>
+									<option value="10">77</option>
+									<option value="9 / 10">
+										70 / 77
+									</option>
+								</optgroup>
+								<optgroup class="selectpicker-s" label="Naxtel">
+									<option value="6">60</option>
+								</optgroup>
+								<optgroup class="selectpicker-s" label="BTRİB">
+									<option value="12">12</option>
+								</optgroup>
+								<optgroup class="selectpicker-s" label="Gürcüstan">
+									<option value="17">577</option>
+									<option value="18">555</option>
+									<option value="17 / 18">
+										577 / 555
+									</option>
+								</optgroup>
+								<optgroup class="selectpicker-s" label="Rusiya">
+									<option value="19">903</option>
+									<option value="20">905</option>
+									<option value="19 / 20">
+										903 / 905
+									</option>
+								</optgroup>
+								<optgroup class="selectpicker-s" label="Türkiyə">
+									<option value="14">532</option>
+									<option value="15">53</option>
+									<option value="16">56</option>
+									<option value="14 / 15 / 16">
+										532 / 53 / 56
+									</option>
+								</optgroup>
+								<optgroup class="selectpicker-s" label="Paket nömrələr">
+									<option value="21">Çoxlu prefiks</option>
+								</optgroup>
+								<option class="car" value="car">Maşın</option>
+							</select>
+						</div>
+						<div id="number_search" class="my-2 col-lg-5 col-md-10 d-flex justify-content-between">
+							<input type="tel" id="number1" name="number1" pattern="[0-9]*" value=""
+								class="number-search inputs inpt2 shadow text-center border rounded" placeholder="X"
+								onkeyup="keyPr(event, 1);">
+							<input type="tel" id="number2" name="number2" pattern="[0-9]*" value=""
+								class="number-search inputs inpt2 shadow text-center border rounded" placeholder="X"
+								onkeyup="keyPr(event, 2);">
+							<input type="tel" id="number3" name="number3" pattern="[0-9]*" value=""
+								class="number-search inputs inpt2 shadow text-center border rounded" placeholder="X"
+								onkeyup="keyPr(event, 3);">
+							<input type="tel" id="number4" name="number4" pattern="[0-9]*" value=""
+								class="number-search inputs inpt2 shadow text-center border rounded" placeholder="X"
+								onkeyup="keyPr(event, 4);">
+							<input type="tel" id="number5" name="number5" pattern="[0-9]*" value=""
+								class="number-search inputs inpt2 shadow text-center border rounded" placeholder="X"
+								onkeyup="keyPr(event, 5);">
+							<input type="tel" id="number6" name="number6" pattern="[0-9]*" value=""
+								class="number-search inputs inpt2 shadow text-center border rounded" placeholder="X"
+								onkeyup="keyPr(event, 6);">
+							<input type="tel" id="number7" name="number7" pattern="[0-9]*" value=""
+								class="number-search inputs inpt2 shadow text-center border rounded" placeholder="X"
+								onkeyup="keyPr(event, 7);">
+						</div>
+						<div class=" my-2 col-lg-1 col-md-6 col-xs-6 w-100">
+							<button type="submit" onclick="alertFunction()"
+								class="btn  bg-white w-100 shadow tap-hover">Tap</button>
+						</div>
+						<div class=" my-2 col-lg-1 col-md-6 col-xs-6 ">
+							<a href="#" class=" btn  w-100 bg-white shadow sil-hover">Sil</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- main -->
+
+	<main class="container my-5">
+		<h2 class="text-purple">Azercell</h2>
+
+		<form action="">
+			<div class="row my-4">
+				<div class="col-6">
+					<select class="browser-default custom-select">
+						<option selected>Reklamın növünü seçin</option>
+						<option value="1">Top</option>
+						<option value="2">Vip</option>
+						<option value="3">İrəli çək</option>
+					</select>
+				</div>
+				<div class="col-6">
+					<select class="browser-default custom-select" disabled>
+						<option selected>Müddəti seçin</option>
+						<option value="1"></option>
+					</select>
+				</div>
+			</div>
+			<button type="submit" class="btn bg-purple text-white  shadow-sm rounded "
+				style="border: 1px solid #d2acee; width: 150px;">Göndər</button>
+		</form>
+	</main>
+
+	<!-- footer -->
+
+	<footer class="bg-black   pb-4">
+		<div class="container-lg">
+			<div class="row pt-5 pb-4">
+				<div class="col-lg-4 justify-content-start pt-4">
+					<ul>
+						<li><a href="#" class="text-white font-weight-bold text-decoration-none">www.nömrə.net</a></li>
+						<li class="dropdown d-sm-none align-items-center my-4 d-md-flex">
+							<a class="dropdown-toggle text-decoration-none text-white" data-toggle="dropdown" href="#"
+								aria-expanded="false"><img src="./img/azerbaijan.png" alt="" style="width: 20px;"
+									class="">
+							</a>
+							<ul class="dropdown-menu px-2 dropdown-user">
+								<li><a href="#" class="text-decoration-none text-muted fs-lg-13">
+										Az</a>
+								</li>
+								<li><a href="#" class="text-decoration-none text-muted fs-lg-13">
+										Rus</a>
+								</li>
+
+							</ul>
+						</li>
+					</ul>
+
+				</div>
+				<div class="col-lg-4 pt-4">
+					<ul class="">
+						<li class="d-flex align-items-center">
+							<i class="fas fa-phone-alt mr-1 font-weight-lighter text-white "></i>
+							<a href="#" class="text-white text-decoration-none font-weight-lighter">+994502210176</a>
+						</li>
+						<li class="d-flex align-items-center">
+							<i class="fab fa-whatsapp mr-2 font-weight-lighter text-white"></i>
+							<a href="" class="text-white text-decoration-none font-weight-lighter">+994516606000</a>
+						</li>
+						<li class="d-flex align-items-center">
+							<i class="far fa-calendar mr-2 font-weight-lighter text-white"></i>
+							<a href="" class="text-white text-decoration-none font-weight-lighter">994.55.123.67</a>
+						</li>
+						<li class="d-flex align-items-center">
+							<i class="far fa-envelope mr-2 font-weight-lighter text-white"></i>
+							<a href="" class="text-white text-decoration-none font-weight-lighter">info@nomre.net</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-4  pt-4">
+					<ul>
+						<li>
+							<div class="footer_subcribs_area">
+								<form class="navbar-form navbar-left" role="search">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Elektron poçt əlavə edin">
+										<button type="submit" class="submit_btn"><i
+												class="fab fa-telegram-plane "></i></button>
+									</div>
+
+								</form>
+							</div>
+
+						</li>
+						<li>
+							<div class="d-flex pt-4 px-0">
+
+								<ul class="social-icons px-0">
+									<li class="d-inline "><a href="" class="social-icon text-decoration-none"> <i
+												class="fab fa-facebook-f text-white"></i></a></li>
+									<li class="d-inline ml-3"><a href="" class="social-icon text-decoration-none"> <i
+												class="fab fa-twitter text-white"></i></a></li>
+									<li class="d-inline ml-3"><a href="" class="social-icon text-decoration-none"> <i
+												class="fab fa-instagram text-white"></i></a></li>
+									<li class="d-inline ml-3"><a href="" class="social-icon text-decoration-none"> <i
+												class="fab fa-linkedin-in text-white"></i></a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+
+
+				</div>
+			</div>
+			<hr class="bg-secondary">
+			<div class="row d-flex  ">
+				<div class="col-lg-12 text-center">
+					<span class="text-white font-weight-lighter fs-lg-14">www.nomre.net | Avanti MMC </span>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript">
+
+		function alertFunction() {
+			setTimeout(function () { alert("Axtarış"); }, 1000);
+		}
+
+		/*let mobile_menu = document.querySelector('#mobile_menu')
+		document.getElementById('open_menu').addEventListener('click', function (e) {
+			mobile_menu.classList.toggle('left-0')
+			e.target.classList.toggle('fa-times')
+		})*/
+		$('#open_menu').click(function () {
+			$('#mobile_menu').toggleClass('left-0')
+			$('#open_menu').toggleClass('is-active')
+		})
+
+		//number-search
+		function keyPr(ev, ind) {
+			//48 - 0
+			// 8 - backspace
+			//46 - delete
+
+			if ((ev.keyCode > 47 && ev.keyCode < 58) || (ev.keyCode > 95 && ev.keyCode < 106)) {
+				if (ev.keyCode > 47 && ev.keyCode < 58) {
+					document.getElementById("number" + ind).value = (ev.keyCode - 48);
+				} else {
+					document.getElementById("number" + ind).value = (ev.keyCode - 96);
+				}
+				if (ind < 7) {
+					document.getElementById("number" + (ind + 1)).focus();
+				}
+			} else if (ev.keyCode === 8 || ev.keyCode === 46) {
+				document.getElementById("number" + ind).value = '';
+				if (ind > 1) {
+					document.getElementById("number" + (ind - 1)).focus();
+				}
+			} else {
+				document.getElementById("number" + ind).value = '';
+
+			}
+			return false;
+		}
+	</script>
+</body>
+
+</html>
