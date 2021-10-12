@@ -34,14 +34,15 @@
 										class="nav  d-lg-flex justify-content-between align-items-center navbar-top-links navbar-right">
 										<li class="list-unstyled justify-content-center">
 											<a href="./login.html"
-												class="text-decoration-none  d-flex align-items-center "
-												data-toggle="modal" data-target=".exampleModallogin">
+												class="text-decoration-none  d-flex align-items-center  py-2 px-3"
+												style="border: 1px solid #22BEA5;" data-toggle="modal"
+												data-target=".exampleModallogin">
 												<img src="./img/loginn.png" alt=""
 													style="width: 12px;margin-right: 5px;">
 												<span class="fs-lg-13  text-dark ">Daxil olun</span>
 											</a>
 										</li>
-										<div class="modal shadow rounded fade exampleModallogin p-5 my-5  fade in"
+										<div class="modal shadow rounded fade exampleModallogin  my-5 z-high fade in"
 											id="login_page" tabindex="-1" role="dialog"
 											aria-labelledby="exampleModalLabel" aria-hidden="false">
 											<div class="modal-dialog" role="document">
@@ -95,14 +96,16 @@
 																	</div>
 																</div>
 																<button type="submit"
-																	class="btn btn-outline submit-btn w-100 shadow">Daxil
+																	class="btn btn-outline submit-btn w-100 shadow"
+																	id="load2"data-style="zoom-out"
+																	data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">Daxil
 																	olun</button>
 															</div>
 														</div>
 
 													</div>
 													<div class="modal-footer justify-content-center">
-														<a href="" class="text-decoration-none text-primary"
+														<a href="#" class="text-decoration-none fs-md-14 text-primary"
 															data-target="#register_page" data-toggle="modal">Saytda
 															hesabınız yoxdursa, qeydiyyatdan
 															keçin</a>
@@ -118,20 +121,21 @@
 										class="nav  d-lg-flex justify-content-between align-items-center navbar-top-links navbar-right">
 										<li class="list-unstyledjustify-content-center">
 											<a href="./signup.html"
-												class="text-decoration-none d-flex align-items-center"
-												data-toggle="modal" data-target=".exampleModalsignup">
+												class="text-decoration-none d-flex align-items-center  py-2 px-3"
+												style="border: 1px solid #22BEA5;" data-toggle="modal"
+												data-target=".exampleModalsignup">
 												<img src="./img/user.png" alt=""
 													style="width: 15px; margin-right: 5px;">
 												<span class="fs-lg-13 text-dark ">Qeydiyyat</span>
 											</a>
 										</li>
 
-										<div class="modal shadow rounded fade exampleModalsignup p-5 my-5  fade z"
+										<div class="modal shadow rounded fade exampleModalsignup my-5 z-high fade "
 											id="register_page" tabindex="-1" role="dialog"
 											aria-labelledby="exampleModalLabel" aria-hidden="true">
 											<div class="modal-dialog" role="document">
 												<div class="modal-content">
-													<div class="modal-header justify-content-center ">
+													<div class="modal-header justify-content-center fs-md-14">
 														<div class="modal-title text-center" id="exampleModalLabel">
 															<p class="m-0">Saytda qeydiyyatdan keçdikdən sonra
 																satdığınız və ya
@@ -199,7 +203,7 @@
 																</form>
 
 																<button type="submit"
-																	class="btn btn-outline submit-btn w-100 shadow">Qeydiyyat</button>
+																	class="btn btn-outline submit-btn w-100 shadow" data-style="zoom-out">Qeydiyyat</button>
 															</div>
 														</div>
 
@@ -217,7 +221,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-5 col-md-5">
+						<div class="col-md-5">
 							<ul
 								class="nav  d-lg-flex justify-content-between align-items-center navbar-top-links navbar-right">
 								<li>
@@ -231,10 +235,10 @@
 									</a>
 								</li>
 								<li>
-									<div class="hamburger hamburger--spring position-relative z " id="open_menu"
+									<div class="hamburger hamburger--spring position-relative z-middle " id="open_menu"
 										style="top: -9px;">
 										<div class="hamburger-box">
-											<div class="hamburger-inner z"></div>
+											<div class="hamburger-inner z-middle"></div>
 										</div>
 									</div>
 								</li>
@@ -1415,6 +1419,15 @@
 		$("#register_page").click(function () {
 			$("#register_page").modal("hide");
 		});
+
+		$('.btn-outline').on('click', function () {
+			var $this = $(this);
+			$this.button('loading');
+			setTimeout(function () {
+				$this.button('reset');
+			}, 8000);
+		});
+
 	</script>
 </body>
 

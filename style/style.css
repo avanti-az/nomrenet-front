@@ -169,7 +169,12 @@ a:before, a:after, a > span:before, a > span:after {
   /* //////// */
 .d-none-hover{display: block;}
 a:hover{color: rgb(49, 49, 49);}
+
+.submit-btn{
+  border: 1px solid #22BEA5;
+}
 .submit-btn:hover{
+  border: 0;
   background-color: #5b2a6d;
   color: wheat;
   transition: 0.5s;
@@ -196,13 +201,14 @@ a:hover{color: rgb(49, 49, 49);}
 .fs-lg-14{font-size: 14px;}
 .fs-lg-50{font-size: 50px;}
 
-
-.z{z-index: 999999999;}
+.z-middle{z-index:  99999999;}
+.z-high{z-index: 999999999999;}
 .left-100{ left: -100% }
 .left-0{ left: 0; }
 .t-5{ transition: .5s }
 .z-100{ z-index: 100 }
-.h-100vh{ height: calc(100vh - 108px) }
+.h-100vh{ height: 100vh }
+.h-60vh{height: 60vh;}
 .top-0{ top: 0 }
 .pt-100{ padding-top: 100px }
 
