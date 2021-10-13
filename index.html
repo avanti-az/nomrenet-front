@@ -96,9 +96,7 @@
 																	</div>
 																</div>
 																<button type="submit"
-																	class="btn btn-outline submit-btn w-100 shadow"
-																	id="btn-one" data-style="zoom-out"
-																	>Daxil
+																	class="btn btn-outline submit-btn w-100 shadow btn-one">Daxil
 																	olun</button>
 															</div>
 														</div>
@@ -203,8 +201,7 @@
 																</form>
 
 																<button type="submit"
-																	class="btn btn-outline submit-btn w-100 shadow"
-																	id="btn-one"
+																	class="btn btn-outline submit-btn w-100 shadow btn-one"
 																	data-style="zoom-out">Qeydiyyat</button>
 															</div>
 														</div>
@@ -1303,7 +1300,7 @@
 			</div>
 		</div>
 	</footer>
-
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
@@ -1422,8 +1419,8 @@
 			$("#register_page").modal("hide");
 		});
 
-		$('#btn-one').click(function () {
-			$('#btn-one').html('<span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>Loading...').attr('disabled', true);
+		$('.btn-one').click(function () {
+			$('.btn-one').html('<span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>Loading...').attr('disabled', true);
 		});
 
 	</script>
