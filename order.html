@@ -22,24 +22,38 @@
 				<div class="col-lg-2 col-md-2 col-xs-12  my-md-4 ">
 					<a href="./index.html"><img src="./img/logonumber.png" class="" style="width: 60px;" alt=""></a>
 				</div>
-				<div class="col-lg-7 my-sm-3">
+				<div class="col-lg-8 my-sm-3">
 					<div class="row d-flex align-items-center justify-content-between">
-						<div class="col-lg-6 col-md-6">
+						<div class="col-md-1 col-xs-12 d-flex justify-content-between">
+							<div class="btn-group my-4">
+								<a type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false" style="color: rgb(58, 58, 58);">
+									<span class="custom-icon custom-icon-flag-az"></span>
+								</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Az</a>
+									<a class="dropdown-item" href="#">Rus</a>
+									<a class="dropdown-item" href="#">Eng</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-5">
 							<div class="row">
 								<div class="col-6">
 									<ul
 										class="nav  d-lg-flex justify-content-between align-items-center navbar-top-links navbar-right">
 										<li class="list-unstyled justify-content-center">
 											<a href="./login.html"
-												class="text-decoration-none  d-flex align-items-center "
-												data-toggle="modal" data-target=".exampleModallogin">
+												class="text-decoration-none  d-flex align-items-center  py-2 px-3"
+												style="border: 1px solid #22BEA5;" data-toggle="modal"
+												data-target=".exampleModallogin">
 												<img src="./img/loginn.png" alt=""
 													style="width: 12px;margin-right: 5px;">
-												<span class="fs-lg-13  text-dark ">Daxil olun</span>
+												<span class="fs-lg-14 text-dark ">Daxil olun</span>
 											</a>
 										</li>
-
-										<div class="modal shadow rounded fade exampleModallogin p-5 my-5modal fade in"
+										<div class="modal shadow rounded fade exampleModallogin  my-5 z-high fade in"
 											id="login_page" tabindex="-1" role="dialog"
 											aria-labelledby="exampleModalLabel" aria-hidden="false">
 											<div class="modal-dialog" role="document">
@@ -93,14 +107,14 @@
 																	</div>
 																</div>
 																<button type="submit"
-																	class="btn btn-outline submit-btn w-100 shadow">Daxil
+																	class="btn btn-outline submit-btn w-100 shadow btn-one">Daxil
 																	olun</button>
 															</div>
 														</div>
 
 													</div>
 													<div class="modal-footer justify-content-center">
-														<a href="" class="text-decoration-none text-primary"
+														<a href="#" class="text-decoration-none fs-md-14 text-primary"
 															data-target="#register_page" data-toggle="modal">Saytda
 															hesabınız yoxdursa, qeydiyyatdan
 															keçin</a>
@@ -116,20 +130,21 @@
 										class="nav  d-lg-flex justify-content-between align-items-center navbar-top-links navbar-right">
 										<li class="list-unstyledjustify-content-center">
 											<a href="./signup.html"
-												class="text-decoration-none d-flex align-items-center"
-												data-toggle="modal" data-target=".exampleModalsignup">
+												class="text-decoration-none d-flex align-items-center  py-2 px-3"
+												style="border: 1px solid #22BEA5;" data-toggle="modal"
+												data-target=".exampleModalsignup">
 												<img src="./img/user.png" alt=""
 													style="width: 15px; margin-right: 5px;">
-												<span class="fs-lg-13   text-dark ">Qeydiyyat</span>
+												<span class="fs-lg-14 text-dark ">Qeydiyyat</span>
 											</a>
 										</li>
 
-										<div class="modal shadow rounded fade exampleModalsignup p-5 my-5modal fade z"
+										<div class="modal shadow rounded fade exampleModalsignup my-5 z-high fade "
 											id="register_page" tabindex="-1" role="dialog"
 											aria-labelledby="exampleModalLabel" aria-hidden="true">
 											<div class="modal-dialog" role="document">
 												<div class="modal-content">
-													<div class="modal-header justify-content-center ">
+													<div class="modal-header justify-content-center fs-md-14">
 														<div class="modal-title text-center" id="exampleModalLabel">
 															<p class="m-0">Saytda qeydiyyatdan keçdikdən sonra
 																satdığınız və ya
@@ -197,13 +212,14 @@
 																</form>
 
 																<button type="submit"
-																	class="btn btn-outline submit-btn w-100 shadow">Qeydiyyat</button>
+																	class="btn btn-outline submit-btn w-100 shadow btn-one"
+																	data-style="zoom-out">Qeydiyyat</button>
 															</div>
 														</div>
 
 													</div>
 													<div class="modal-footer justify-content-center">
-														<a href="" class="text-decoration-none text-primary"
+														<a href="#" class="text-decoration-none text-primary"
 															data-target="#login_page" data-toggle="modal">Saytda
 															qeydiyyasınız varsa,daxil olun</a>
 													</div>
@@ -215,7 +231,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-5 col-md-5">
+						<div class="col-md-5">
 							<ul
 								class="nav  d-lg-flex justify-content-between align-items-center navbar-top-links navbar-right">
 								<li>
@@ -230,9 +246,9 @@
 								</li>
 								<li>
 									<div class="hamburger hamburger--spring position-relative z-middle " id="open_menu"
-										style="top: -9px;">
+										style="top: -4px;">
 										<div class="hamburger-box">
-											<div class="hamburger-inner z"></div>
+											<div class="hamburger-inner z-middle"></div>
 										</div>
 									</div>
 								</li>
@@ -470,26 +486,26 @@
 
 	<!-- footer -->
 
-	<footer class="bg-black  pb-4">
+	<footer class="bg-black position-relative pb-4">
 		<div class="container-lg">
 			<div class="row pt-5 pb-4">
 				<div class="col-lg-4 justify-content-start pt-4">
 					<ul>
 						<li><a href="#" class="text-white font-weight-bold text-decoration-none">www.nömrə.net</a></li>
-						<li class="dropdown d-sm-none align-items-center my-4 d-md-flex">
-							<a class="dropdown-toggle text-decoration-none text-white" data-toggle="dropdown" href="#"
-								aria-expanded="false"><img src="./img/azerbaijan.png" alt="" style="width: 20px;"
-									class="">
-							</a>
-							<ul class="dropdown-menu px-2 dropdown-user">
-								<li><a href="#" class="text-decoration-none text-muted fs-lg-13">
-										Az</a>
-								</li>
-								<li><a href="#" class="text-decoration-none text-muted fs-lg-13">
-										Rus</a>
-								</li>
+						<li class=" d-sm-none align-items-center my-4 d-md-flex">
+							<!-- Example single danger button -->
+							<div class="btn-group">
+								<a type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false" style="color: white;">
+									<span class="custom-icon custom-icon-flag-az"></span>
+								</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Az</a>
+									<a class="dropdown-item" href="#">Rus</a>
+									<a class="dropdown-item" href="#">Eng</a>
 
-							</ul>
+								</div>
+							</div>
 						</li>
 					</ul>
 
