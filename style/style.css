@@ -176,7 +176,7 @@ a:before, a:after, a > span:before, a > span:after {
 .custom-icon-flag-az {
   background-position-x: -14px;
   background-position-y: -14px;
-  height: 14px;
+  height: 15px;
 }
 
 .custom-icon-flag-en {
@@ -238,6 +238,7 @@ a:hover{color: rgb(56, 42, 42);}
 .fs-lg-14{font-size: 14px;}
 .fs-lg-50{font-size: 50px;}
 
+.z-low{z-index: 999999994;}
 .z-middle{z-index:  99999999;}
 .z-high{z-index: 999999999999;}
 .left-100{ left: -100% }
