@@ -21,9 +21,9 @@
 				<div class="col-md-2 col-xs-12  my-md-4 ">
 					<a href="./index.html"><img src="./img/logonumber.png" class="" style="width: 60px;" alt=""></a>
 				</div>
-				<div class="col-md-4 col-xs-12 ">
+				<div class="col-md-6 col-xs-12 ">
 					<div class="row d-flex justify-content-between align-items-center mb-md-4 ">
-						<div class="col-8">
+						<div class="col-6 ">
 							<a href="./" class="text-decoration-none" data-toggle="modal"
 								data-target=".exampleModalsignup">
 
@@ -33,7 +33,23 @@
 								</button>
 							</a>
 						</div>
-						<div class="col-3">
+						<div class="col-2 d-flex justify-content-center">
+							<ul class="nav py-profile justify-content-end">
+								<li class="nav-item dropdown">
+									<a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle1"
+										role="button" aria-haspopup="true" aria-expanded="false" >
+										<i class="fas fa-user text-purple fs-lg-20"></i>
+									</a>
+									
+									<div class="dropdown-menu dropdown-menu-right">
+										<a href="#" class="dropdown-item">Profil</a>
+										<a href="#" class="dropdown-item">Çıxış</a>
+									</div>
+								</li>
+							</ul>
+
+						</div>
+						<div class="col-2">
 							<div class="hamburger hamburger--spring position-relative z-middle" id="open_menu"
 								style="top: -9px;">
 								<div class="hamburger-box">
@@ -170,26 +186,26 @@
 	</main>
 
 	<!-- footer -->
-	<footer class="bg-black  pb-4">
+	<footer class="bg-black position-relative pb-4">
 		<div class="container-lg">
 			<div class="row pt-5 pb-4">
 				<div class="col-lg-4 justify-content-start pt-4">
 					<ul>
 						<li><a href="#" class="text-white font-weight-bold text-decoration-none">www.nömrə.net</a></li>
-						<li class="dropdown d-sm-none align-items-center my-4 d-md-flex">
-							<a class="dropdown-toggle text-decoration-none text-white" data-toggle="dropdown" href="#"
-								aria-expanded="false"><img src="./img/azerbaijan.png" alt="" style="width: 20px;"
-									class="">
-							</a>
-							<ul class="dropdown-menu px-2 dropdown-user">
-								<li><a href="#" class="text-decoration-none text-muted fs-lg-13">
-										Az</a>
-								</li>
-								<li><a href="#" class="text-decoration-none text-muted fs-lg-13">
-										Rus</a>
-								</li>
+						<li class=" d-sm-none align-items-center my-4 d-md-flex">
+							<!-- Example single danger button -->
+							<div class="btn-group">
+								<a type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false" style="color: white;">
+									<span class="custom-icon custom-icon-flag-az"></span>
+								</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Az</a>
+									<a class="dropdown-item" href="#">Rus</a>
+									<a class="dropdown-item" href="#">Eng</a>
 
-							</ul>
+								</div>
+							</div>
 						</li>
 					</ul>
 

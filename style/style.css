@@ -200,8 +200,8 @@ a:before, a:after, a > span:before, a > span:after {
 }
 
 
-
-.dropdown-toggle::after{margin-left: 1.5rem;}
+.dropdown-toggle1::after{margin-left: 1.5rem;}
+.dropdown-toggle::after{margin-left: 1.5rem;margin-top: 5px;}
 .top-190{top: -195px;}
   /* //////// */
 .d-none-hover{display: block;}
