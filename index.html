@@ -39,10 +39,8 @@
 				</div>
 				<div class="col-4 d-flex justify-content-end align-items-center">
 					<i class="fas fa-envelope fs-lg-11 text-white mr-2"></i>
-					<span class="fs-lg-11 text-white font-weight-lighter">+994502210176</span>
+					<span class="fs-lg-11 text-white font-weight-lighter">info@nomre.net</span>
 				</div>
-				
-				
 			</div>
 		</div>
 	</div>
@@ -55,7 +53,7 @@
 				</div>
 				<div class="col-lg-8 my-sm-3">
 					<div class="row d-flex align-items-center justify-content-between">
-						
+
 						<div class="col-md-5">
 							<div class="row">
 								<div class="col-6">
@@ -75,7 +73,8 @@
 											<div class="modal-dialog" role="document">
 												<div class="modal-content">
 													<div class="modal-header justify-content-center py-3">
-														<div class="modal-title text-center" id="exampleModalLabelLogin">
+														<div class="modal-title text-center"
+															id="exampleModalLabelLogin">
 															<h5>www.nomre.net'a Daxil olun</h5>
 															<p class="m-0">Ən yaxşı nömrələri ən uyğun qiymətlərə tapın!
 															</p>
@@ -131,7 +130,7 @@
 													</div>
 													<div class="modal-footer justify-content-center">
 														<a href="#" class="text-decoration-none fs-md-14 text-primary"
-															data-target="#register_page"  data-toggle="modal">Saytda
+															data-target="#register_page" data-toggle="modal">Saytda
 															hesabınız yoxdursa, qeydiyyatdan
 															keçin</a>
 													</div>
@@ -144,23 +143,59 @@
 								<div class="col-6 d-flex justify-content-end ">
 									<ul
 										class="nav  d-lg-flex justify-content-between align-items-center navbar-top-links navbar-right">
-										
+
 										<li class="list-unstyled justify-content-center">
 											<a href="#"
 												class="text-decoration-none  d-flex align-items-center  py-2 px-3"
 												style="border: 1px solid #22BEA5;" data-toggle="modal"
-												data-target=".exampleModalsignup">
+												data-target=".exampleModalChoose">
 												<span class="fs-lg-14 text-dark ">Qeydiyyat</span>
 											</a>
 										</li>
-
-										<div class="modal shadow rounded fade exampleModalsignup signupbtn my-5 z-high in"
+										<div class="modal shadow rounded fade exampleModalChoose  my-5 z-high in"
 											id="register_page" tabindex="-1" role="dialog"
 											aria-labelledby="exampleModalLabelSignup" aria-hidden="false">
 											<div class="modal-dialog" role="document">
 												<div class="modal-content">
 													<div class="modal-header justify-content-center fs-md-14">
-														<div class="modal-title text-center" id="exampleModalLabelSignup">
+														<div class="modal-title text-center"
+															id="exampleModalLabelSignup">
+															<p class="m-0 py-2">
+																Saytda qeydiyyatdan keçdikdən sonra satdığınız və ya
+																almaq istədiyiniz nömrənin elanını verə bilərsiz.
+															</p>
+														</div>
+
+													</div>
+													<div class="modal-body p-3">
+														<div class="row my-5">
+															<div class="col-6">
+																<a type="submit"
+																	class="btn btn-outline bg-purple text-white  w-100 shadow "
+																	data-target=".dillerModal"  data-toggle="modal">Dillerlər</a>
+															</div>
+															<div class="col-6">
+																<a type="submit"
+																	class="btn btn-outline bg-purple text-white  w-100 shadow "
+																	data-target=".dillerOlmayanModal" data-toggle="modal">Diller Olmayan</a>
+															</div>
+														</div>
+													</div>
+													<div class="modal-footer justify-content-center">
+														<a href="#" id="tikla"
+															class="text-decoration-none text-primary"
+															data-target="#login_page" data-toggle="modal">Saytda
+															qeydiyyasınız varsa,daxil olun</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal shadow rounded fade dillerModal  my-5 z-high in"
+										id="register_page"	tabindex="-1" role="dialog" aria-hidden="false">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header justify-content-center fs-md-14">
+														<div class="modal-title text-center">
 															<p class="m-0">Saytda qeydiyyatdan keçdikdən sonra
 																satdığınız və ya
 																almaq
@@ -172,8 +207,103 @@
 													<div class="modal-body p-3">
 														<div class="row d-flex justify-content-center">
 															<div class="col-10 text-center">
-																<form action="" id="requestacallformSignup" method="POST"
-																	class="needs-validation" novalidate
+																<form action="" id="requestacallformSignup"
+																	method="POST" class="needs-validation" novalidate
+																	name="requesttacallform">
+																	<div class="row">
+																		<div class="col-6">
+																			<div class="form-group">
+																				<div class="input-group">
+																					<input type="text"
+																						class="form-control"
+																						placeholder="Ad" name="text">
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-6">
+																			<div class="form-group">
+																				<div class="input-group">
+																					<input type="text"
+																						class="form-control"
+																						placeholder="Soyad" name="text">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<div class="input-group">
+																			<input type="email" class="form-control"
+																				placeholder="Email" name="email"
+																				onchange="validateEmailAdd();">
+																		</div>
+																	</div>
+
+																	<div class="form-group">
+																		<div class="input-group">
+																			<input type="number" class="form-control"
+																				placeholder="Əlaqə nömrəsi daxil edin"
+																				name="number">
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<div class="input-group">
+																			<input type="text" class="form-control"
+																				placeholder="Ünvan"
+																				name="text">
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<div class="input-group">
+																			<input type="password" class="form-control"
+																				placeholder="Şifrə" name="password"
+																				onchange="validatePasswordAdd();">
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<div class="input-group">
+																			<input type="password" class="form-control"
+																				placeholder="Şifrəni təkrar yazın"
+																				name="password">
+																		</div>
+																	</div>
+																</form>
+
+																<button type="submit"
+																	class="btn btn-outline submit-btn w-100 shadow btn-one"
+																	data-style="zoom-out">Qeydiyyat</button>
+															</div>
+														</div>
+
+													</div>
+													<div class="modal-footer justify-content-center">
+														<a href="#" id="tikla"
+															class="text-decoration-none text-primary"
+															data-target="#login_page" data-toggle="modal">Saytda
+															qeydiyyasınız varsa,daxil olun</a>
+													</div>
+
+												</div>
+											</div>
+										</div>
+										<div class="modal shadow rounded fade dillerOlmayanModal  my-5 z-high in"
+										id="register_page"	tabindex="-1" role="dialog" aria-hidden="false">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header justify-content-center fs-md-14">
+														<div class="modal-title text-center">
+															<p class="m-0">Saytda qeydiyyatdan keçdikdən sonra
+																satdığınız və ya
+																almaq
+																istədiyiniz nömrənin elanını verə bilərsiz.
+															</p>
+														</div>
+
+													</div>
+													<div class="modal-body p-3">
+														<div class="row d-flex justify-content-center">
+															<div class="col-10 text-center">
+																<form action="" id="requestacallformSignup"
+																	method="POST" class="needs-validation" novalidate
 																	name="requesttacallform">
 																	<div class="row">
 																		<div class="col-6">
@@ -234,7 +364,8 @@
 
 													</div>
 													<div class="modal-footer justify-content-center">
-														<a href="#" id="signupbtn" class="text-decoration-none text-primary"
+														<a href="#" id="tikla"
+															class="text-decoration-none text-primary"
 															data-target="#login_page" data-toggle="modal">Saytda
 															qeydiyyasınız varsa,daxil olun</a>
 													</div>
@@ -251,7 +382,7 @@
 								class="nav  d-lg-flex justify-content-between align-items-center navbar-top-links navbar-right">
 								<li>
 									<a href="./" class="text-decoration-none" data-toggle="modal"
-										data-target=".exampleModalsignup">
+										data-target=".exampleModallogin">
 
 										<button class="add-btn add-btn-1 d-flex align-items-center  ">
 											<i class="fas fa-plus text-white mr-2" style="font-size: 8px; "></i>
@@ -485,7 +616,8 @@
 					</thead>
 					<tbody>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2183472 <span class="custom-icon custom-icon-star"></span></td>
+							<td class="font-weight-bold">Azercell 50 2183472 <span
+									class="custom-icon custom-icon-star"></span></td>
 							<td>1500AZN</td>
 							<td class="text-center">1200AZN</td>
 							<td>Müşfiq Əsədov (0502210176)</td>
@@ -497,7 +629,8 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2108907 <span class="custom-icon custom-icon-star"></span></td>
+							<td class="font-weight-bold">Azercell 50 2108907 <span
+									class="custom-icon custom-icon-star"></span></td>
 							<td>1300 AZN</td>
 							<td class="text-center">1251 AZN</td>
 							<td>Müşfiq Əsədov (0502210176)</td>
@@ -509,7 +642,8 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2109114 <span class="custom-icon custom-icon-star"></span></td>
+							<td class="font-weight-bold">Azercell 50 2109114 <span
+									class="custom-icon custom-icon-star"></span></td>
 							<td>1800 AZN</td>
 							<td class="text-center"><span class="custom-icon custom-icon-smile"></span></td>
 							<td>Müşfiq Əsədov (0502210176)</td>
@@ -521,7 +655,8 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 9892222 <span class="custom-icon custom-icon-star"></span></td>
+							<td class="font-weight-bold">Azercell 50 9892222 <span
+									class="custom-icon custom-icon-star"></span></td>
 							<td><strike>1100 AZN</strike></td>
 							<td class="text-center"><span class="custom-icon custom-icon-smile"></span></td>
 							<td>Müşfiq Əsədov (0502210176)</td>
@@ -533,7 +668,8 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2224453 <span class="custom-icon custom-icon-star"></span></td>
+							<td class="font-weight-bold">Azercell 50 2224453 <span
+									class="custom-icon custom-icon-star"></span></td>
 							<td>500AZN</td>
 							<td class="text-center">1200AZN</td>
 							<td>Müşfiq Əsədov (0502210176)</td>
@@ -545,7 +681,8 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2229371 <span class="custom-icon custom-icon-star"></span></td>
+							<td class="font-weight-bold">Azercell 50 2229371 <span
+									class="custom-icon custom-icon-star"></span></td>
 							<td><strike>300 AZN</strike></td>
 							<td class="text-center"><span class="custom-icon custom-icon-smile"></span></td>
 							<td>Müşfiq Əsədov (0502210176)</td>
@@ -557,7 +694,8 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2668666 <span class="custom-icon custom-icon-star"></span></td>
+							<td class="font-weight-bold">Azercell 50 2668666 <span
+									class="custom-icon custom-icon-star"></span></td>
 							<td>3000 AZN</td>
 							<td class="text-center"><span class="custom-icon custom-icon-smile"></span></td>
 							<td>Müşfiq Əsədov (0502210176)</td>
@@ -569,7 +707,8 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2224342<span class="custom-icon custom-icon-star"></span></td>
+							<td class="font-weight-bold">Azercell 50 2224342<span
+									class="custom-icon custom-icon-star"></span></td>
 							<td><strike>1500 AZN</strike></td>
 							<td class="text-center">1000 AZN</td>
 							<td>Müşfiq Əsədov (0502210176)</td>
@@ -581,7 +720,8 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2102976<span class="custom-icon custom-icon-star"></span></td>
+							<td class="font-weight-bold">Azercell 50 2102976<span
+									class="custom-icon custom-icon-star"></span></td>
 							<td><strike>1300 AZN</strike></td>
 							<td class="text-center">1300 AZN</td>
 							<td>Müşfiq Əsədov (0502210176)</td>
@@ -593,7 +733,8 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2183472 <span class="custom-icon custom-icon-star"></span></td>
+							<td class="font-weight-bold">Azercell 50 2183472 <span
+									class="custom-icon custom-icon-star"></span></td>
 							<td>1500AZN</td>
 							<td class="text-center">1200AZN</td>
 							<td>Müşfiq Əsədov (0502210176)</td>
@@ -633,7 +774,8 @@
 							<div class="col-md-12 py-2">
 								<div class="row" style="margin-bottom: 7px; margin-top: 7px">
 									<div class="col-6">
-										<a href="./ads.html" class="text-decoration-none text-info effect-border py-0">Reklam
+										<a href="./ads.html"
+											class="text-decoration-none text-info effect-border py-0">Reklam
 											et</a>
 
 									</div>
@@ -670,7 +812,8 @@
 							<div class="col-md-12 py-2">
 								<div class="row" style="margin-bottom: 7px; margin-top: 7px">
 									<div class="col-6">
-										<a href="./ads.html" class="text-decoration-none text-info effect-border py-0">Reklam
+										<a href="./ads.html"
+											class="text-decoration-none text-info effect-border py-0">Reklam
 											et</a>
 
 									</div>
@@ -706,7 +849,8 @@
 							<div class="col-md-12 py-2">
 								<div class="row" style="margin-bottom: 7px; margin-top: 7px">
 									<div class="col-6">
-										<a href="./ads.html" class="text-decoration-none text-info effect-border py-0">Reklam
+										<a href="./ads.html"
+											class="text-decoration-none text-info effect-border py-0">Reklam
 											et</a>
 
 									</div>
@@ -743,7 +887,8 @@
 							<div class="col-md-12 py-2">
 								<div class="row" style="margin-bottom: 7px; margin-top: 7px">
 									<div class="col-6">
-										<a href="./ads.html" class="text-decoration-none text-info effect-border py-0">Reklam
+										<a href="./ads.html"
+											class="text-decoration-none text-info effect-border py-0">Reklam
 											et</a>
 
 									</div>
@@ -780,7 +925,8 @@
 							<div class="col-md-12 py-2">
 								<div class="row" style="margin-bottom: 7px; margin-top: 7px">
 									<div class="col-6">
-										<a href="./ads.html" class="text-decoration-none text-info effect-border py-0">Reklam
+										<a href="./ads.html"
+											class="text-decoration-none text-info effect-border py-0">Reklam
 											et</a>
 
 									</div>
@@ -817,7 +963,8 @@
 							<div class="col-md-12 py-2">
 								<div class="row" style="margin-bottom: 7px; margin-top: 7px">
 									<div class="col-6">
-										<a href="./ads.html" class="text-decoration-none text-info effect-border py-0">Reklam
+										<a href="./ads.html"
+											class="text-decoration-none text-info effect-border py-0">Reklam
 											et</a>
 
 									</div>
@@ -854,7 +1001,8 @@
 							<div class="col-md-12 py-2">
 								<div class="row" style="margin-bottom: 7px; margin-top: 7px">
 									<div class="col-6">
-										<a href="./ads.html" class="text-decoration-none text-info effect-border py-0">Reklam
+										<a href="./ads.html"
+											class="text-decoration-none text-info effect-border py-0">Reklam
 											et</a>
 
 									</div>
@@ -891,7 +1039,8 @@
 							<div class="col-md-12 py-2">
 								<div class="row" style="margin-bottom: 7px; margin-top: 7px">
 									<div class="col-6">
-										<a href="./ads.html" class="text-decoration-none text-info effect-border py-0">Reklam
+										<a href="./ads.html"
+											class="text-decoration-none text-info effect-border py-0">Reklam
 											et</a>
 
 									</div>
@@ -928,7 +1077,8 @@
 							<div class="col-md-12 py-2">
 								<div class="row" style="margin-bottom: 7px; margin-top: 7px">
 									<div class="col-6">
-										<a href="./ads.html" class="text-decoration-none text-info effect-border py-0">Reklam
+										<a href="./ads.html"
+											class="text-decoration-none text-info effect-border py-0">Reklam
 											et</a>
 
 									</div>
@@ -965,7 +1115,8 @@
 							<div class="col-md-12 py-2">
 								<div class="row" style="margin-bottom: 7px; margin-top: 7px">
 									<div class="col-6">
-										<a href="./ads.html" class="text-decoration-none text-info effect-border py-0">Reklam
+										<a href="./ads.html"
+											class="text-decoration-none text-info effect-border py-0">Reklam
 											et</a>
 
 									</div>
@@ -1002,7 +1153,8 @@
 							<div class="col-md-12 py-2">
 								<div class="row" style="margin-bottom: 7px; margin-top: 7px">
 									<div class="col-6">
-										<a href="./ads.html" class="text-decoration-none text-info effect-border py-0">Reklam
+										<a href="./ads.html"
+											class="text-decoration-none text-info effect-border py-0">Reklam
 											et</a>
 
 									</div>
@@ -1039,7 +1191,8 @@
 							<div class="col-md-12 py-2">
 								<div class="row" style="margin-bottom: 7px; margin-top: 7px">
 									<div class="col-6">
-										<a href="./ads.html" class="text-decoration-none text-info effect-border py-0">Reklam
+										<a href="./ads.html"
+											class="text-decoration-none text-info effect-border py-0">Reklam
 											et</a>
 
 									</div>
@@ -1076,7 +1229,8 @@
 							<div class="col-md-12 py-2">
 								<div class="row" style="margin-bottom: 7px; margin-top: 7px">
 									<div class="col-6">
-										<a href="./ads.html" class="text-decoration-none text-info effect-border py-0">Reklam
+										<a href="./ads.html"
+											class="text-decoration-none text-info effect-border py-0">Reklam
 											et</a>
 
 									</div>
@@ -1113,7 +1267,8 @@
 							<div class="col-md-12 py-2">
 								<div class="row" style="margin-bottom: 7px; margin-top: 7px">
 									<div class="col-6">
-										<a href="./ads.html" class="text-decoration-none text-info effect-border py-0">Reklam
+										<a href="./ads.html"
+											class="text-decoration-none text-info effect-border py-0">Reklam
 											et</a>
 
 									</div>
@@ -1150,7 +1305,8 @@
 							<div class="col-md-12 py-2">
 								<div class="row" style="margin-bottom: 7px; margin-top: 7px">
 									<div class="col-6">
-										<a href="./ads.html" class="text-decoration-none text-info effect-border py-0">Reklam
+										<a href="./ads.html"
+											class="text-decoration-none text-info effect-border py-0">Reklam
 											et</a>
 
 									</div>
@@ -1187,7 +1343,8 @@
 							<div class="col-md-12 py-2">
 								<div class="row" style="margin-bottom: 7px; margin-top: 7px">
 									<div class="col-6">
-										<a href="./ads.html" class="text-decoration-none text-info effect-border py-0">Reklam
+										<a href="./ads.html"
+											class="text-decoration-none text-info effect-border py-0">Reklam
 											et</a>
 
 									</div>
@@ -1441,8 +1598,8 @@
 			$("#banner").html(banners[index]);
 		});
 
-		$("#signupbtn").click(function () {
-			$("#register_page").modal("hide");
+		$("#tikla").click(function () {
+			$(".modal").modal("hide");
 		});
 
 		$('.btn-one').click(function () {
