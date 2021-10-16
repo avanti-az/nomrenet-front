@@ -182,7 +182,7 @@
 														</div>
 													</div>
 													<div class="modal-footer justify-content-center">
-														<a href="#" id="tikla"
+														<a href="#" id="clickbutton"
 															class="text-decoration-none text-primary"
 															data-target="#login_page" data-toggle="modal">Saytda
 															qeydiyyasınız varsa,daxil olun</a>
@@ -276,7 +276,7 @@
 
 													</div>
 													<div class="modal-footer justify-content-center">
-														<a href="#" id="tikla"
+														<a href="#" id="clickbutton"
 															class="text-decoration-none text-primary"
 															data-target="#login_page" data-toggle="modal">Saytda
 															qeydiyyasınız varsa,daxil olun</a>
@@ -364,7 +364,7 @@
 
 													</div>
 													<div class="modal-footer justify-content-center">
-														<a href="#" id="tikla"
+														<a href="#" id="clickbutton"
 															class="text-decoration-none text-primary"
 															data-target="#login_page" data-toggle="modal">Saytda
 															qeydiyyasınız varsa,daxil olun</a>
@@ -753,6 +753,9 @@
 			}
 			return false;
 		}
+		$("#clickbutton").click(function () {
+			$(".modal").modal("hide");
+		});
 	</script>
 </body>
 
