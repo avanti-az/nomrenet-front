@@ -235,6 +235,7 @@ a:hover{color: rgb(56, 42, 42);}
 .fs-lg-20{font-size: 20px;}
 .fs-lg-25{font-size: 25px;}
 .fs-lg-11{font-size: 11px;}
+.fs-lg-18{font-size: 18px;}
 .fs-lg-14{font-size: 14px;}
 .fs-lg-50{font-size: 50px;}
 
@@ -251,7 +252,7 @@ a:hover{color: rgb(56, 42, 42);}
 .pt-100{ padding-top: 100px }
 
 
-.card { 
+.card-animate { 
   border: 1px solid rgb(142, 97, 175);
   /* background-image: linear-gradient(to right, #27142c, #3b0741);  */
   transition: all 0.2s ease;
@@ -259,7 +260,7 @@ a:hover{color: rgb(56, 42, 42);}
   background: transparent;
 }
 
-.card:hover {
+.card-animate:hover {
   transition: 1s;
   box-shadow: 3px 4px 6px 2px #d3d3d3;
   transform: scale(1.1)
