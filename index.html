@@ -129,10 +129,10 @@
 
 													</div>
 													<div class="modal-footer justify-content-center">
-														<a href="#" class="text-decoration-none fs-md-14 text-primary"
-															data-target="#register_page" data-toggle="modal">Saytda
-															hesabınız yoxdursa, qeydiyyatdan
-															keçin</a>
+														<a href="#"
+														   class="text-decoration-none fs-md-14 text-primary modal-chooser-button"
+															data-target="#register_page" data-toggle="modal"
+														> Saytda hesabınız yoxdursa, qeydiyyatdan keçin</a>
 													</div>
 
 												</div>
@@ -171,19 +171,19 @@
 														<div class="row my-5">
 															<div class="col-6">
 																<a type="submit"
-																	class="btn btn-outline bg-purple text-white  w-100 shadow "
+																	class="btn btn-outline bg-purple text-white  w-100 shadow modal-chooser-button"
 																	data-target=".dillerModal"  data-toggle="modal">Dillerlər</a>
 															</div>
 															<div class="col-6">
 																<a type="submit"
-																	class="btn btn-outline bg-purple text-white  w-100 shadow "
+																	class="btn btn-outline bg-purple text-white  w-100 shadow modal-chooser-button"
 																	data-target=".dillerOlmayanModal" data-toggle="modal">Diller Olmayan</a>
 															</div>
 														</div>
 													</div>
 													<div class="modal-footer justify-content-center">
-														<a href="#" id="clickbutton"
-															class="text-decoration-none text-primary"
+														<a href="#" id="login-from-chooser"
+															class="text-decoration-none text-primary modal-chooser-button"
 															data-target="#login_page" data-toggle="modal">Saytda
 															qeydiyyasınız varsa,daxil olun</a>
 													</div>
@@ -191,7 +191,8 @@
 											</div>
 										</div>
 										<div class="modal shadow rounded fade dillerModal  my-5 z-high in"
-										id="register_page"	tabindex="-1" role="dialog" aria-hidden="false">
+											id="register_page"	tabindex="-1" role="dialog" aria-hidden="false"
+										>
 											<div class="modal-dialog" role="document">
 												<div class="modal-content">
 													<div class="modal-header justify-content-center fs-md-14">
@@ -276,8 +277,8 @@
 
 													</div>
 													<div class="modal-footer justify-content-center">
-														<a href="#" id="clickbutton"
-															class="text-decoration-none text-primary"
+														<a href="#" id="login-from-register-dealer"
+															class="text-decoration-none text-primary modal-chooser-button"
 															data-target="#login_page" data-toggle="modal">Saytda
 															qeydiyyasınız varsa,daxil olun</a>
 													</div>
@@ -364,8 +365,8 @@
 
 													</div>
 													<div class="modal-footer justify-content-center">
-														<a href="#" id="clickbutton"
-															class="text-decoration-none text-primary"
+														<a href="#" id="login-from-register-non-dealer"
+															class="text-decoration-none text-primary modal-chooser-button"
 															data-target="#login_page" data-toggle="modal">Saytda
 															qeydiyyasınız varsa,daxil olun</a>
 													</div>
@@ -1596,10 +1597,29 @@
 			index = Math.floor(Math.random() * banners.length);
 			index = index === 0 ? index + 1 : index;
 			$("#banner").html(banners[index]);
+
+			// login-from-chooser
+			// login-from-register-non-dealer
+			// login-from-register-dealer
+			const allToLoginButtons = $('.modal-chooser-button');
+			if (allToLoginButtons) {
+				allToLoginButtons.each((index, el) => {
+					$(el).on("click", (ev) => {
+						const _currentModal = $(ev.target).closest('.modal');
+						console.log(">> ", _currentModal);
+						_currentModal.modal("hide");
+					});
+				});
+			}
 		});
 
+
+
+
 		$("#clickbutton").click(function () {
-			$(".modal").modal("hide");
+			const me = $(this);
+			const myModal = me.closest('.modal');
+			myModal.modal("hide");
 		});
 
 		$('.btn-one').click(function () {
