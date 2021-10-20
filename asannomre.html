@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>nömrə.net</title>
 	<meta charset="utf-8">
@@ -11,34 +12,38 @@
 	<link rel="stylesheet" type="text/css" href="style/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
+
 <body class="position-relative">
 	<!-- header -->
 	<div class="bg-black">
 		<div class="container">
 			<div class="row d-flex align-items-center justify-content-around py-2">
-				<div class="col-4">
+				<div class="col-6">
+					<div class="row d-flex justify-content-between">
+						<div class="col-xs-12 col-md-5 ">
+							<i class="fas fa-phone-alt fs-lg-11 text-white mr-2"></i>
+							<span class="fs-lg-11 text-white font-weight-lighter">+994502210176</span>
+						</div>
+						<div class="col-xs-12 col-md-5 ">
+							<i class="fas fa-envelope fs-lg-11 text-white mr-2"></i>
+							<span class="fs-lg-11 text-white font-weight-lighter">info@nomre.net</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-4 d-flex justify-content-end">
 					<div class="btn-group mb-3 ">
 						<a type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
 							aria-expanded="false" style="color: rgb(255, 255, 255);">
 							<span class="custom-icon custom-icon-flag-az"></span>
 						</a>
-						<div class="dropdown-menu">
+						<div class="dropdown-menu z-high">
 							<a class="dropdown-item" href="#">Az</a>
 							<a class="dropdown-item" href="#">Rus</a>
 							<a class="dropdown-item" href="#">Eng</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-4 d-flex justify-content-end align-items-center">
-					<i class="fas fa-phone-alt fs-lg-11 text-white mr-2"></i>
-					<span class="fs-lg-11 text-white font-weight-lighter">+994502210176</span>
-				</div>
-				<div class="col-4 d-flex justify-content-end align-items-center">
-					<i class="fas fa-envelope fs-lg-11 text-white mr-2"></i>
-					<span class="fs-lg-11 text-white font-weight-lighter">+994502210176</span>
-				</div>
-				
-				
 			</div>
 		</div>
 	</div>
@@ -107,7 +112,7 @@
 																				class="form-check-input filled-in"
 																				id="new">
 																			<label
-																				class=" form-check-label small card-link-secondary"
+																				class=" form-check-label small card card-animate-link-secondary"
 																				for="new">Məni xatirla</label>
 																		</div>
 
@@ -127,10 +132,10 @@
 
 													</div>
 													<div class="modal-footer justify-content-center">
-														<a href="#" class="text-decoration-none fs-md-14 text-primary"
-															data-target="#register_page" data-toggle="modal">Saytda
-															hesabınız yoxdursa, qeydiyyatdan
-															keçin</a>
+														<a href="#"
+															class="text-decoration-none fs-md-14 text-primary modal-chooser-button"
+															data-target="#register_page" data-toggle="modal"> Saytda
+															hesabınız yoxdursa, qeydiyyatdan keçin</a>
 													</div>
 
 												</div>
@@ -169,19 +174,21 @@
 														<div class="row my-5">
 															<div class="col-6">
 																<a type="submit"
-																	class="btn btn-outline bg-purple text-white  w-100 shadow "
-																	data-target=".dillerModal"  data-toggle="modal">Dillerlər</a>
+																	class="btn btn-outline bg-purple text-white  w-100 shadow modal-chooser-button"
+																	data-target=".dillerModal"
+																	data-toggle="modal">Dillerlər</a>
 															</div>
 															<div class="col-6">
 																<a type="submit"
-																	class="btn btn-outline bg-purple text-white  w-100 shadow "
-																	data-target=".dillerOlmayanModal" data-toggle="modal">Diller Olmayan</a>
+																	class="btn btn-outline bg-purple text-white  w-100 shadow modal-chooser-button"
+																	data-target=".dillerOlmayanModal"
+																	data-toggle="modal">Diller Olmayan</a>
 															</div>
 														</div>
 													</div>
 													<div class="modal-footer justify-content-center">
-														<a href="#" id="clickbutton"
-															class="text-decoration-none text-primary"
+														<a href="#" id="login-from-chooser"
+															class="text-decoration-none text-primary modal-chooser-button"
 															data-target="#login_page" data-toggle="modal">Saytda
 															qeydiyyasınız varsa,daxil olun</a>
 													</div>
@@ -189,7 +196,7 @@
 											</div>
 										</div>
 										<div class="modal shadow rounded fade dillerModal  my-5 z-high in"
-										id="register_page"	tabindex="-1" role="dialog" aria-hidden="false">
+											id="register_page" tabindex="-1" role="dialog" aria-hidden="false">
 											<div class="modal-dialog" role="document">
 												<div class="modal-content">
 													<div class="modal-header justify-content-center fs-md-14">
@@ -246,8 +253,7 @@
 																	<div class="form-group">
 																		<div class="input-group">
 																			<input type="text" class="form-control"
-																				placeholder="Ünvan"
-																				name="text">
+																				placeholder="Ünvan" name="text">
 																		</div>
 																	</div>
 																	<div class="form-group">
@@ -274,8 +280,8 @@
 
 													</div>
 													<div class="modal-footer justify-content-center">
-														<a href="#" id="clickbutton"
-															class="text-decoration-none text-primary"
+														<a href="#" id="login-from-register-dealer"
+															class="text-decoration-none text-primary modal-chooser-button"
 															data-target="#login_page" data-toggle="modal">Saytda
 															qeydiyyasınız varsa,daxil olun</a>
 													</div>
@@ -284,7 +290,7 @@
 											</div>
 										</div>
 										<div class="modal shadow rounded fade dillerOlmayanModal  my-5 z-high in"
-										id="register_page"	tabindex="-1" role="dialog" aria-hidden="false">
+											id="register_page" tabindex="-1" role="dialog" aria-hidden="false">
 											<div class="modal-dialog" role="document">
 												<div class="modal-content">
 													<div class="modal-header justify-content-center fs-md-14">
@@ -362,8 +368,8 @@
 
 													</div>
 													<div class="modal-footer justify-content-center">
-														<a href="#" id="clickbutton"
-															class="text-decoration-none text-primary"
+														<a href="#" id="login-from-register-non-dealer"
+															class="text-decoration-none text-primary modal-chooser-button"
 															data-target="#login_page" data-toggle="modal">Saytda
 															qeydiyyasınız varsa,daxil olun</a>
 													</div>
@@ -599,10 +605,11 @@
 			<div class="row">
 				<div class="col-md-4">
 					<ul class="sidebar-navigation p-0 m-0 list-unstyled position-relative">
-						<li class="position-relative w-100"><a href="#" class="text-dark d-block">Korporativ nömrələr</a>
+						<li class="position-relative w-100"><a href="#" class="text-dark d-block">Korporativ
+								nömrələr</a>
 						</li>
-						<li class="position-relative w-100"><a href="./asannomre.html"
-								class="text-dark d-block">Asan nömrələr</a></li>
+						<li class="position-relative w-100"><a href="./asannomre.html" class="text-dark d-block">Asan
+								nömrələr</a></li>
 					</ul>
 				</div>
 			</div>
@@ -738,10 +745,29 @@
 			}
 
 			return false;
+
+			// login-from-chooser
+			// login-from-register-non-dealer
+			// login-from-register-dealer
+
 		}
+		const allToLoginButtons = $('.modal-chooser-button');
+		if (allToLoginButtons) {
+			allToLoginButtons.each((index, el) => {
+				$(el).on("click", (ev) => {
+					const _currentModal = $(ev.target).closest('.modal');
+					console.log(">> ", _currentModal);
+					_currentModal.modal("hide");
+				});
+			});
+		}
+
 		$("#clickbutton").click(function () {
-			$(".modal").modal("hide");
+			const me = $(this);
+			const myModal = me.closest('.modal');
+			myModal.modal("hide");
 		});
 	</script>
 </body>
+
 </html>

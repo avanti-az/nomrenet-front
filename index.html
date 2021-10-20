@@ -20,26 +20,31 @@
 	<div class="bg-black">
 		<div class="container">
 			<div class="row d-flex align-items-center justify-content-around py-2">
-				<div class="col-4">
+				<div class="col-6">
+					<div class="row d-flex justify-content-between">
+						<div class="col-xs-12 col-md-5 ">
+							<i class="fas fa-phone-alt fs-lg-11 text-white mr-2"></i>
+							<span class="fs-lg-11 text-white font-weight-lighter">+994502210176</span>
+						</div>
+						<div class="col-xs-12 col-md-5 ">
+										<i class="fas fa-envelope fs-lg-11 text-white mr-2"></i>
+					<span class="fs-lg-11 text-white font-weight-lighter">info@nomre.net</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-4 d-flex justify-content-end">
 					<div class="btn-group mb-3 ">
 						<a type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
 							aria-expanded="false" style="color: rgb(255, 255, 255);">
 							<span class="custom-icon custom-icon-flag-az"></span>
 						</a>
-						<div class="dropdown-menu">
+						<div class="dropdown-menu z-high">
 							<a class="dropdown-item" href="#">Az</a>
 							<a class="dropdown-item" href="#">Rus</a>
 							<a class="dropdown-item" href="#">Eng</a>
 						</div>
 					</div>
-				</div>
-				<div class="col-4 d-flex justify-content-end align-items-center">
-					<i class="fas fa-phone-alt fs-lg-11 text-white mr-2"></i>
-					<span class="fs-lg-11 text-white font-weight-lighter">+994502210176</span>
-				</div>
-				<div class="col-4 d-flex justify-content-end align-items-center">
-					<i class="fas fa-envelope fs-lg-11 text-white mr-2"></i>
-					<span class="fs-lg-11 text-white font-weight-lighter">info@nomre.net</span>
 				</div>
 			</div>
 		</div>
@@ -130,9 +135,9 @@
 													</div>
 													<div class="modal-footer justify-content-center">
 														<a href="#"
-														   class="text-decoration-none fs-md-14 text-primary modal-chooser-button"
-															data-target="#register_page" data-toggle="modal"
-														> Saytda hesabınız yoxdursa, qeydiyyatdan keçin</a>
+															class="text-decoration-none fs-md-14 text-primary modal-chooser-button"
+															data-target="#register_page" data-toggle="modal"> Saytda
+															hesabınız yoxdursa, qeydiyyatdan keçin</a>
 													</div>
 
 												</div>
@@ -172,12 +177,14 @@
 															<div class="col-6">
 																<a type="submit"
 																	class="btn btn-outline bg-purple text-white  w-100 shadow modal-chooser-button"
-																	data-target=".dillerModal"  data-toggle="modal">Dillerlər</a>
+																	data-target=".dillerModal"
+																	data-toggle="modal">Dillerlər</a>
 															</div>
 															<div class="col-6">
 																<a type="submit"
 																	class="btn btn-outline bg-purple text-white  w-100 shadow modal-chooser-button"
-																	data-target=".dillerOlmayanModal" data-toggle="modal">Diller Olmayan</a>
+																	data-target=".dillerOlmayanModal"
+																	data-toggle="modal">Diller Olmayan</a>
 															</div>
 														</div>
 													</div>
@@ -191,8 +198,7 @@
 											</div>
 										</div>
 										<div class="modal shadow rounded fade dillerModal  my-5 z-high in"
-											id="register_page"	tabindex="-1" role="dialog" aria-hidden="false"
-										>
+											id="register_page" tabindex="-1" role="dialog" aria-hidden="false">
 											<div class="modal-dialog" role="document">
 												<div class="modal-content">
 													<div class="modal-header justify-content-center fs-md-14">
@@ -249,8 +255,7 @@
 																	<div class="form-group">
 																		<div class="input-group">
 																			<input type="text" class="form-control"
-																				placeholder="Ünvan"
-																				name="text">
+																				placeholder="Ünvan" name="text">
 																		</div>
 																	</div>
 																	<div class="form-group">
@@ -287,7 +292,7 @@
 											</div>
 										</div>
 										<div class="modal shadow rounded fade dillerOlmayanModal  my-5 z-high in"
-										id="register_page"	tabindex="-1" role="dialog" aria-hidden="false">
+											id="register_page" tabindex="-1" role="dialog" aria-hidden="false">
 											<div class="modal-dialog" role="document">
 												<div class="modal-content">
 													<div class="modal-header justify-content-center fs-md-14">
@@ -609,15 +614,15 @@
 				<table class="table table-borderless my-5" id="example">
 					<thead class=" desktop-view my-5 ">
 						<tr>
-							<td scope="col" class="font-weight-bold">Nömrələr</td>
-							<td scope="col" class="font-weight-bold">Qiymət</td>
-							<td scope="col" class="font-weight-bold text-center">Endirimli qiymət</td>
-							<td scope="col" class="font-weight-bold">Əlaqəli şəxs</td>
+							<td scope="col" class="font-weight-bold fs-lg-20">Nömrələr</td>
+							<td scope="col" class="font-weight-bold fs-lg-20">Qiymət</td>
+							<td scope="col" class="font-weight-bold fs-lg-20  text-center">Endirimli qiymət</td>
+							<td scope="col" class="font-weight-bold fs-lg-20">Əlaqəli şəxs</td>
 						</tr>
 					</thead>
 					<tbody>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2183472 <span
+							<td class="font-weight-bold text-dark">Azercell 50 2183472 <span
 									class="custom-icon custom-icon-star"></span></td>
 							<td>1500AZN</td>
 							<td class="text-center">1200AZN</td>
@@ -630,7 +635,7 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2108907 <span
+							<td class="font-weight-bold text-dark ">Azercell 50 2108907 <span
 									class="custom-icon custom-icon-star"></span></td>
 							<td>1300 AZN</td>
 							<td class="text-center">1251 AZN</td>
@@ -643,7 +648,7 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2109114 <span
+							<td class="font-weight-bold text-dark">Azercell 50 2109114 <span
 									class="custom-icon custom-icon-star"></span></td>
 							<td>1800 AZN</td>
 							<td class="text-center"><span class="custom-icon custom-icon-smile"></span></td>
@@ -656,7 +661,7 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 9892222 <span
+							<td class="font-weight-bold text-dark">Azercell 50 9892222 <span
 									class="custom-icon custom-icon-star"></span></td>
 							<td><strike>1100 AZN</strike></td>
 							<td class="text-center"><span class="custom-icon custom-icon-smile"></span></td>
@@ -669,7 +674,7 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2224453 <span
+							<td class="font-weight-bold text-dark">Azercell 50 2224453 <span
 									class="custom-icon custom-icon-star"></span></td>
 							<td>500AZN</td>
 							<td class="text-center">1200AZN</td>
@@ -682,7 +687,7 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2229371 <span
+							<td class="font-weight-bold text-dark">Azercell 50 2229371 <span
 									class="custom-icon custom-icon-star"></span></td>
 							<td><strike>300 AZN</strike></td>
 							<td class="text-center"><span class="custom-icon custom-icon-smile"></span></td>
@@ -695,7 +700,7 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2668666 <span
+							<td class="font-weight-bold text-dark">Azercell 50 2668666 <span
 									class="custom-icon custom-icon-star"></span></td>
 							<td>3000 AZN</td>
 							<td class="text-center"><span class="custom-icon custom-icon-smile"></span></td>
@@ -708,7 +713,7 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2224342<span
+							<td class="font-weight-bold text-dark">Azercell 50 2224342<span
 									class="custom-icon custom-icon-star"></span></td>
 							<td><strike>1500 AZN</strike></td>
 							<td class="text-center">1000 AZN</td>
@@ -721,7 +726,7 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2102976<span
+							<td class="font-weight-bold text-dark">Azercell 50 2102976<span
 									class="custom-icon custom-icon-star"></span></td>
 							<td><strike>1300 AZN</strike></td>
 							<td class="text-center">1300 AZN</td>
@@ -734,7 +739,7 @@
 							</td>
 						</tr>
 						<tr class="desktop-view">
-							<td class="font-weight-bold">Azercell 50 2183472 <span
+							<td class="font-weight-bold text-dark ">Azercell 50 2183472 <span
 									class="custom-icon custom-icon-star"></span></td>
 							<td>1500AZN</td>
 							<td class="text-center">1200AZN</td>
@@ -755,7 +760,7 @@
 					<div class="col-sm-6 mb-4 ">
 						<div class=" card card-animate text-center">
 							<div class="col-md-12 py-3 justify-content-center align-items-center d-flex">
-								<span class="mr-3 font-weight-bold">Azercell 50 2105540</span>
+								<span class="mr-3 font-weight-bold text-dark">Azercell 50 2105540</span>
 								<i class="material-icons">
 									star_border
 								</i>
@@ -1612,8 +1617,6 @@
 				});
 			}
 		});
-
-
 
 
 		$("#clickbutton").click(function () {
