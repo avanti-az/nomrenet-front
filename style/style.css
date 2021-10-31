@@ -222,6 +222,12 @@ a > span:after {
   top: -195px;
 }
 /* //////// */
+
+ .multi_select_box button{
+  width: 100%;
+  background-color: white;
+} 
+
 .d-none-hover {
   display: block;
 }
