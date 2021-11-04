@@ -6,7 +6,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -477,8 +478,7 @@
 				<div class="col-12 serch-table">
 					<div class="row d-flex justify-content-around align-items-center my-3">
 						<div class=" my-2 col-lg-2 col-md-6 col-xs-6 multi_select_box">
-							<select id="" class="multi_select w-100"  name=""
-								 >
+							<select id="" class="multi_select w-100" name="">
 								<option selected="selected" value="1">Satılır</option>
 								array(0) {
 								}
@@ -486,76 +486,60 @@
 							</select>
 						</div>
 						<div class="prefiks my-2 col-lg-2 col-md-6 col-xs-6 multi_select_box">
-							<select name="" id="" class="multi_select w-100" multiple>
-								<optgroup class="selectpicker-s" label="Bütün operatorlar">
-									<option value="all" selected="">Prefiks </option>
-								</optgroup>
-								<optgroup class="selectpicker-s" label="Azercell">
-									<option value="1">50</option>
-									<option value="2">51</option>
-									<option value="3">10</option>
-									<option value="1 / 2 / 3">
-										50 / 51 / 10
-									</option>
-								</optgroup>
-								<optgroup class="selectpicker-s" label="Azercell">
-									<option value="1">50</option>
-									<option value="2">51</option>
-									<option value="3">10</option>
-									<option value="1 / 2 / 3">
-										50 / 51 / 10
-									</option>
-								</optgroup>
-								<optgroup class="selectpicker-s" label="Bakcell">
-									<option value="4">55</option>
-									<option value="5">99</option>
-									<option value="4 / 5">
-										55 / 99
-									</option>
-								</optgroup>
-								<optgroup class="selectpicker-s" label="Nar">
-									<option value="9">70</option>
-									<option value="10">77</option>
-									<option value="9 / 10">
-										70 / 77
-									</option>
-								</optgroup>
-								<optgroup class="selectpicker-s" label="Naxtel">
-									<option value="6">60</option>
-								</optgroup>
-								<optgroup class="selectpicker-s" label="BTRİB">
-									<option value="12">12</option>
-								</optgroup>
-								<optgroup class="selectpicker-s" label="Gürcüstan">
-									<option value="17">577</option>
-									<option value="18">555</option>
-									<option value="17 / 18">
-										577 / 555
-									</option>
-								</optgroup>
-								<optgroup class="selectpicker-s" label="Rusiya">
-									<option value="19">903</option>
-									<option value="20">905</option>
-									<option value="19 / 20">
-										903 / 905
-									</option>
-								</optgroup>
-								<optgroup class="selectpicker-s" label="Türkiyə">
-									<option value="14">532</option>
-									<option value="15">53</option>
-									<option value="16">56</option>
-									<option value="14 / 15 / 16">
-										532 / 53 / 56
-									</option>
-								</optgroup>
-								<optgroup class="selectpicker-s" label="Paket nömrələr">
-									<option value="21">Çoxlu prefiks</option>
-								</optgroup>
-								<option class="car" value="car">Maşın</option>
-						
+							<select name="" id="selectOption" class="multi_select w-100" multiple>
+							  <optgroup class="selectpicker-s" label="Bütün operatorlar">
+								<option id="prefix" value="all" selected>Prefiks</option>
+							  </optgroup>
+							  <optgroup class="selectpicker-s" label="Azercell">
+								<option value="1">50</option>
+								<option value="2">51</option>
+								<option value="3">10</option>
+								<option value="1 / 2 / 3">50 / 51 / 10</option>
+							  </optgroup>
+							  <optgroup class="selectpicker-s" label="Azercell">
+								<option value="1">50</option>
+								<option value="2">51</option>
+								<option value="3">10</option>
+								<option value="1 / 2 / 3">50 / 51 / 10</option>
+							  </optgroup>
+							  <optgroup class="selectpicker-s" label="Bakcell">
+								<option value="4">55</option>
+								<option value="5">99</option>
+								<option value="4 / 5">55 / 99</option>
+							  </optgroup>
+							  <optgroup class="selectpicker-s" label="Nar">
+								<option value="9">70</option>
+								<option value="10">77</option>
+								<option value="9 / 10">70 / 77</option>
+							  </optgroup>
+							  <optgroup class="selectpicker-s" label="Naxtel">
+								<option value="6">60</option>
+							  </optgroup>
+							  <optgroup class="selectpicker-s" label="BTRİB">
+								<option value="12">12</option>
+							  </optgroup>
+							  <optgroup class="selectpicker-s" label="Gürcüstan">
+								<option value="17">577</option>
+								<option value="18">555</option>
+								<option value="17 / 18">577 / 555</option>
+							  </optgroup>
+							  <optgroup class="selectpicker-s" label="Rusiya">
+								<option value="19">903</option>
+								<option value="20">905</option>
+								<option value="19 / 20">903 / 905</option>
+							  </optgroup>
+							  <optgroup class="selectpicker-s" label="Türkiyə">
+								<option value="14">532</option>
+								<option value="15">53</option>
+								<option value="16">56</option>
+								<option value="14 / 15 / 16">532 / 53 / 56</option>
+							  </optgroup>
+							  <optgroup class="selectpicker-s" label="Paket nömrələr">
+								<option value="21">Çoxlu prefiks</option>
+							  </optgroup>
+							  <option class="car" value="car">Maşın</option>
 							</select>
-						
-						</div>
+						  </div>
 						<div id="number_search" class="my-2 col-lg-4 col-md-10 d-flex justify-content-between">
 							<input type="tel" id="number1" name="number1" pattern="[0-9]*" value=""
 								class="number-search inputs inpt2 shadow text-center border rounded" placeholder="X"
@@ -1589,7 +1573,7 @@
 		// 		$('ul.dropdown-menu >li:last-child', $('td.prefiks')).removeClass('selected');
 		// 	}
 		// });
-		
+
 
 		///banner
 		$(document).ready(function () {
@@ -1615,11 +1599,14 @@
 					});
 				});
 			}
-			$('.multi_select').selectpicker();
+			$(".multi_select").selectpicker();
+        document
+          .getElementById("selectOption")
+          .addEventListener("change", disablePrefix());
 
 		});
 
-
+		
 		$("#clickbutton").click(function () {
 			const me = $(this);
 			const myModal = me.closest('.modal');
@@ -1629,7 +1616,9 @@
 		$('.btn-one').click(function () {
 			$('.btn-one').html('<span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>Loading...').attr('disabled', true);
 		});
-
+		function disablePrefix() {
+			document.getElementById("prefix").removeAttribute("selected");
+		}
 	</script>
 </body>
 
