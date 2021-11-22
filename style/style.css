@@ -175,7 +175,6 @@ a > span:after {
   display: inline-block;
   height: 20px;
   width: 20px;
-  position: absolute;
 }
 
 .custom-icon-flag-az {
@@ -261,6 +260,9 @@ a:hover {
 }
 .bg-grey {
   background-color: #efefef;
+}
+.bg-grey-dark {
+  background-color: #dcd8d87b;
 }
 .bg-grad-purple {
   background-repeat: no-repeat;
@@ -515,4 +517,6 @@ a:hover {
   .mobile-view {
     display: none;
   }
+}
+@media only screen and (max-width: 1200px) {
 }
