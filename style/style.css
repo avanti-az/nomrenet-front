@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  content: "";
+}
 html {
   height: 100%;
 }
@@ -145,7 +152,6 @@ a > span:after {
   position: absolute;
   transition: transform 0.5s ease;
 }
-
 
 .custom-icon {
   background: url(/img/icons.png) no-repeat;
@@ -453,56 +459,47 @@ a:hover {
 } */
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  .fs-md-14 {
-    font-size: 14px;
-  }
-  .py-md-3 {
-    padding-top: 15px;
-  }
-  .my-md-4 {
-    margin-top: 20px;
-    justify-content: center;
-    display: flex;
-    margin-bottom: 20px;
-  }
-  .inputs {
-    width: 30px;
-  }
-}
-.button-jittery a {
+
+.button-jittery a button {
   text-decoration: none;
-  padding: 5px 8px;
-  background: transparent;
-  color: #ff9b2f;
-  border: 1px solid #ff9b2f;
-  border-radius: 2px;
+  padding: 5px 20px;
+  /* background: transparent; */
+  color: #da8e3d;
+  font-weight: lighter;
+  border: 1px solid #da8e3d;
+  border-radius: 30px;
   outline: none;
+  background-color: transparent;
   cursor: pointer;
   position: relative;
   transition: 0.2s ease-in-out;
 }
 
-.button-jittery a {
+.button-jittery a button {
   animation: jittery 4s infinite;
 }
-.button-jittery a :hover {
+.button-jittery a button:hover {
   animation: heartbeat 0.2s infinite;
 }
 /* effectborder */
 .effect-border {
-color: #17a2b8;
-text-decoration: none;
-margin-top: 2px;
-padding: 7px 8px;
-background: transparent;
-border: 1px solid #17a2b8;
-border-radius: 2px;
-position: relative;
+  color: #17a2b8;
+  text-decoration: none;
+  margin-top: 2px;
+  padding: 7px 8px;
+  background: transparent;
+  border: 1px solid #17a2b8;
+  border-radius: 30px;
+  position: relative;
 }
 
-table td{vertical-align: 0!important;}
-.item-ads{margin-top: 5px;}
+table td {
+  vertical-align: 0 !important;
+}
+.item-ads {
+  margin-top: 5px;
+}
+
 /* effectborder */
 @keyframes jittery {
   5%,
@@ -531,7 +528,29 @@ table td{vertical-align: 0!important;}
     transform: scale(1.15) rotate(0);
   }
 }
+@keyframes heartbeat {
+  50% {
+    transform: scale(1.1);
+ }
+}
 
+@media only screen and (max-width: 768px) {
+  .fs-md-14 {
+    font-size: 14px;
+  }
+  .py-md-3 {
+    padding-top: 15px;
+  }
+  .my-md-4 {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .inputs {
+    width: 30px;
+  }
+}
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
   .desktop-view {
