@@ -145,30 +145,7 @@ a > span:after {
   position: absolute;
   transition: transform 0.5s ease;
 }
-.effect-border {
-  padding: 5px;
-  display: inline-block;
-  overflow: hidden;
-}
-.effect-border:before,
-.effect-border:after {
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #73359e;
-}
-.effect-border:before {
-  bottom: 0;
-  transform: translateX(-100%);
-}
-.effect-border:after {
-  top: 0;
-  transform: translateX(100%);
-}
-.effect-border:hover:before,
-.effect-border:hover:after {
-  transform: translateX(0);
-}
+
 
 .custom-icon {
   background: url(/img/icons.png) no-repeat;
@@ -222,10 +199,10 @@ a > span:after {
 }
 /* //////// */
 
- .multi_select_box button{
+.multi_select_box button {
   width: 100%;
   background-color: white;
-} 
+}
 
 .d-none-hover {
   display: block;
@@ -354,7 +331,7 @@ a:hover {
 }
 
 .list-nav li a:hover {
-  text-decoration: none; 
+  text-decoration: none;
   background-image: linear-gradient(to right, #e9c3f5, #b995bd);
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -367,8 +344,8 @@ a:hover {
 .list-nav li a:focus {
   text-decoration: none;
 }
-#footer{
-  margin-top: 150px!important;
+#footer {
+  margin-top: 150px !important;
   padding-bottom: 1.5rem;
 }
 
@@ -491,6 +468,67 @@ a:hover {
   }
   .inputs {
     width: 30px;
+  }
+}
+.button-jittery a {
+  text-decoration: none;
+  padding: 5px 8px;
+  background: transparent;
+  color: #ff9b2f;
+  border: 1px solid #ff9b2f;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+
+.button-jittery a {
+  animation: jittery 4s infinite;
+}
+.button-jittery a :hover {
+  animation: heartbeat 0.2s infinite;
+}
+/* effectborder */
+.effect-border {
+color: #17a2b8;
+text-decoration: none;
+margin-top: 2px;
+padding: 7px 8px;
+background: transparent;
+border: 1px solid #17a2b8;
+border-radius: 2px;
+position: relative;
+}
+
+table td{vertical-align: 0!important;}
+.item-ads{margin-top: 5px;}
+/* effectborder */
+@keyframes jittery {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  15% {
+    transform: scale(1.15);
+  }
+  20% {
+    transform: scale(1.15) rotate(-5deg);
+  }
+  25% {
+    transform: scale(1.15) rotate(5deg);
+  }
+  30% {
+    transform: scale(1.15) rotate(-3deg);
+  }
+  35% {
+    transform: scale(1.15) rotate(2deg);
+  }
+  40% {
+    transform: scale(1.15) rotate(0);
   }
 }
 
