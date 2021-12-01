@@ -42,7 +42,7 @@
 .hamburger-inner::after {
   width: 32px;
   height: 2px;
-  background-color: #6c757d;
+  background-color: #393b3c;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -51,7 +51,7 @@
 }
 .hamburger-inner::before,
 .hamburger-inner::after {
-  content: "";
+  /* content: ""; */
   display: block;
 }
 .hamburger-inner::before {
@@ -81,13 +81,13 @@
   background-color: transparent !important;
 }
 .hamburger--spring.is-active .hamburger-inner::before {
-  top: 0px;
+  top: -97px;
   transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
     transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: translate3d(0, 10px, 0) rotate(45deg);
 }
 .hamburger--spring.is-active .hamburger-inner::after {
-  top: 0px;
+  top: -97px;
   transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
     transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: translate3d(0, 10px, 0) rotate(-45deg);
@@ -95,13 +95,13 @@
 
 @media only screen and (max-width: 992px) {
   .hamburger--spring.is-active .hamburger-inner::before {
-    top: -180px;
+    top: -100px;
     transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
       transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
     transform: translate3d(0, 10px, 0) rotate(45deg);
   }
   .hamburger--spring.is-active .hamburger-inner::after {
-    top: -180px;
+    top: -100px;
     transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
       transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
     transform: translate3d(0, 10px, 0) rotate(-45deg);

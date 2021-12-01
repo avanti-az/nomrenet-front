@@ -491,7 +491,6 @@ a:hover {
   margin-top: 2px;
   padding: 7px 8px;
   background: transparent;
-  border: 1px solid #17a2b8;
   border-radius: 30px;
   position: relative;
 }
@@ -546,22 +545,29 @@ table td {
   }
   .my-md-4 {
     margin-top: 20px;
-    justify-content: center;
-    display: flex;
     margin-bottom: 20px;
   }
   .inputs {
     width: 30px;
   }
+  .justify-xs-content-between{
+    justify-content: space-between;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+@media  (max-width: 992px) {
   .desktop-view {
     display: none;
   }
   .mobile-view {
     display: block;
   }
+  /* .mx-lg-5{
+    margin-left: 50px;
+    margin-right: 50px;
+
+  } */
+  
 }
 @media only screen and (max-width: 480px) {
   .fs-sm-12 {
@@ -571,12 +577,22 @@ table td {
     margin-top: 15px;
     margin-bottom: 15px;
   }
+ 
 }
 
 @media only screen and (min-width: 992px) {
   .mobile-view {
     display: none;
   }
+  .menu-float{
+    float: right!important;
+    display: flex;
+  }
+  .login-signup-md-group{
+    margin-left: 200px;
+  }
 }
-@media only screen and (max-width: 1200px) {
+@media (max-width: 504px) {
+  .m-sm-0{margin-left: 0;margin-right: 0;}
+ 
 }

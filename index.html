@@ -52,365 +52,345 @@
 	</div>
 	<header class="bg-grey">
 		<div class="container py-3">
-			<div class="row justify-content-between align-items-center">
-
-				<div class="col-lg-2 col-md-2 col-xs-12  my-md-4 ">
-					<a href="./index.html"><img src="./img/logonumber.png" class="" style="width: 60px;" alt=""></a>
-				</div>
-				<div class="col-lg-8 my-sm-3">
-					<div class="row d-flex align-items-center justify-content-between">
-
-						<div class="col-md-5">
-							<div class="row">
-								<div class="col-6">
-									<ul
-										class="nav  d-lg-flex justify-content-between align-items-center navbar-top-links navbar-right">
-										<li class="list-unstyled justify-content-center">
-											<a href="#"
-												class="text-decoration-none  d-flex align-items-center  py-2 px-3"
-												style="border: 1px solid #22BEA5;" data-toggle="modal"
-												data-target=".exampleModallogin">
-												<span class="fs-lg-14 text-dark ">Daxil olun</span>
-											</a>
-										</li>
-										<div class="modal shadow rounded fade exampleModallogin  my-5 z-high  in"
-											id="login_page" tabindex="-1" role="dialog"
-											aria-labelledby="exampleModalLabel" aria-hidden="false">
-											<div class="modal-dialog" role="document">
-												<div class="modal-content">
-													<div class="modal-header justify-content-center py-3">
-														<div class="modal-title text-center"
-															id="exampleModalLabelLogin">
-															<h5>www.nomre.net'a Daxil olun</h5>
-															<p class="m-0">Ən yaxşı nömrələri ən uyğun qiymətlərə tapın!
-															</p>
-														</div>
-
-													</div>
-													<div class="modal-body p-3">
-														<div class="row d-flex justify-content-center">
-															<div class="col-10 text-center">
-																<form action="" id="requestacallformLogin" method="POST"
-																	name="requesttacallform">
-																	<div class="form-group">
-																		<div class="input-group">
-																			<input type="email" class="form-control"
-																				placeholder="Email" name="email"
-																				onchange="validateEmailAdd();" />
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<div class="input-group">
-																			<input type="password" class="form-control"
-																				placeholder="Şifrə" name="password"
-																				onchange="validatePasswordAdd();" />
-																		</div>
-																	</div>
-																</form>
-																<div class="row mb-4 ">
-																	<div class="col-md-6 d-flex justify-content-center">
-
-																		<div class="form-check pl-0 mb-3">
-																			<input type="checkbox"
-																				class="form-check-input filled-in"
-																				id="new">
-																			<label
-																				class=" form-check-label small card card-animate-link-secondary"
-																				for="new">Məni xatirla</label>
-																		</div>
-
-																	</div>
-
-																	<div class="col-md-6 ">
-																		<a href="#!"
-																			class=" text-decoration-none fs-lg-14">Şifrəni
-																			unutmusuz?</a>
-																	</div>
-																</div>
-																<button type="submit"
-																	class="btn btn-outline submit-btn w-100 shadow btn-one">Daxil
-																	olun</button>
-															</div>
-														</div>
-
-													</div>
-													<div class="modal-footer justify-content-center">
-														<a href="#"
-															class="text-decoration-none fs-md-14 text-primary modal-chooser-button"
-															data-target="#register_page" data-toggle="modal"> Saytda
-															hesabınız yoxdursa, qeydiyyatdan keçin</a>
-													</div>
-
-												</div>
-											</div>
-										</div>
-									</ul>
-								</div>
-								<div class="col-6 d-flex justify-content-end ">
-									<ul
-										class="nav  d-lg-flex justify-content-between align-items-center navbar-top-links navbar-right">
-
-										<li class="list-unstyled justify-content-center">
-											<a href="#"
-												class="text-decoration-none  d-flex align-items-center  py-2 px-3"
-												style="border: 1px solid #22BEA5;" data-toggle="modal"
-												data-target=".exampleModalChoose">
-												<span class="fs-lg-14 text-dark ">Qeydiyyat</span>
-											</a>
-										</li>
-										<div class="modal shadow rounded fade exampleModalChoose  my-5 z-high in"
-											id="register_page" tabindex="-1" role="dialog"
-											aria-labelledby="exampleModalLabelSignup" aria-hidden="false">
-											<div class="modal-dialog" role="document">
-												<div class="modal-content">
-													<div class="modal-header justify-content-center fs-md-14">
-														<div class="modal-title text-center"
-															id="exampleModalLabelSignup">
-															<p class="m-0 py-2">
-																Saytda qeydiyyatdan keçdikdən sonra satdığınız və ya
-																almaq istədiyiniz nömrənin elanını verə bilərsiz.
-															</p>
-														</div>
-
-													</div>
-													<div class="modal-body p-3">
-														<div class="row my-5">
-															<div class="col-6">
-																<a type="submit"
-																	class="btn btn-outline bg-purple text-white  w-100 shadow modal-chooser-button"
-																	data-target=".dillerModal"
-																	data-toggle="modal">Dillerlər</a>
-															</div>
-															<div class="col-6">
-																<a type="submit"
-																	class="btn btn-outline bg-purple text-white  w-100 shadow modal-chooser-button"
-																	data-target=".dillerOlmayanModal"
-																	data-toggle="modal">Diller Olmayan</a>
-															</div>
-														</div>
-													</div>
-													<div class="modal-footer justify-content-center">
-														<a href="#" id="login-from-chooser"
-															class="text-decoration-none text-primary modal-chooser-button"
-															data-target="#login_page" data-toggle="modal">Saytda
-															qeydiyyasınız varsa,daxil olun</a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="modal shadow rounded fade dillerModal  my-5 z-high in"
-											id="register_page" tabindex="-1" role="dialog" aria-hidden="false">
-											<div class="modal-dialog" role="document">
-												<div class="modal-content">
-													<div class="modal-header justify-content-center fs-md-14">
-														<div class="modal-title text-center">
-															<p class="m-0">Saytda qeydiyyatdan keçdikdən sonra
-																satdığınız və ya
-																almaq
-																istədiyiniz nömrənin elanını verə bilərsiz.
-															</p>
-														</div>
-
-													</div>
-													<div class="modal-body p-3">
-														<div class="row d-flex justify-content-center">
-															<div class="col-10 text-center">
-																<form action="" id="requestacallformSignup"
-																	method="POST" class="needs-validation" novalidate
-																	name="requesttacallform">
-																	<div class="row">
-																		<div class="col-6">
-																			<div class="form-group">
-																				<div class="input-group">
-																					<input type="text"
-																						class="form-control"
-																						placeholder="Ad" name="text">
-																				</div>
-																			</div>
-																		</div>
-																		<div class="col-6">
-																			<div class="form-group">
-																				<div class="input-group">
-																					<input type="text"
-																						class="form-control"
-																						placeholder="Soyad" name="text">
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<div class="input-group">
-																			<input type="email" class="form-control"
-																				placeholder="Email" name="email"
-																				onchange="validateEmailAdd();">
-																		</div>
-																	</div>
-
-																	<div class="form-group">
-																		<div class="input-group">
-																			<input type="number" class="form-control"
-																				placeholder="Əlaqə nömrəsi daxil edin"
-																				name="number">
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<div class="input-group">
-																			<input type="text" class="form-control"
-																				placeholder="Ünvan" name="text">
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<div class="input-group">
-																			<input type="password" class="form-control"
-																				placeholder="Şifrə" name="password"
-																				onchange="validatePasswordAdd();">
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<div class="input-group">
-																			<input type="password" class="form-control"
-																				placeholder="Şifrəni təkrar yazın"
-																				name="password">
-																		</div>
-																	</div>
-																</form>
-
-																<button type="submit"
-																	class="btn btn-outline submit-btn w-100 shadow btn-one"
-																	data-style="zoom-out">Qeydiyyat</button>
-															</div>
-														</div>
-
-													</div>
-													<div class="modal-footer justify-content-center">
-														<a href="#" id="login-from-register-dealer"
-															class="text-decoration-none text-primary modal-chooser-button"
-															data-target="#login_page" data-toggle="modal">Saytda
-															qeydiyyasınız varsa,daxil olun</a>
-													</div>
-
-												</div>
-											</div>
-										</div>
-										<div class="modal shadow rounded fade dillerOlmayanModal  my-5 z-high in"
-											id="register_page" tabindex="-1" role="dialog" aria-hidden="false">
-											<div class="modal-dialog" role="document">
-												<div class="modal-content">
-													<div class="modal-header justify-content-center fs-md-14">
-														<div class="modal-title text-center">
-															<p class="m-0">Saytda qeydiyyatdan keçdikdən sonra
-																satdığınız və ya
-																almaq
-																istədiyiniz nömrənin elanını verə bilərsiz.
-															</p>
-														</div>
-
-													</div>
-													<div class="modal-body p-3">
-														<div class="row d-flex justify-content-center">
-															<div class="col-10 text-center">
-																<form action="" id="requestacallformSignup"
-																	method="POST" class="needs-validation" novalidate
-																	name="requesttacallform">
-																	<div class="row">
-																		<div class="col-6">
-																			<div class="form-group">
-																				<div class="input-group">
-																					<input type="text"
-																						class="form-control"
-																						placeholder="Ad" name="text">
-																				</div>
-																			</div>
-																		</div>
-																		<div class="col-6">
-																			<div class="form-group">
-																				<div class="input-group">
-																					<input type="text"
-																						class="form-control"
-																						placeholder="Soyad" name="text">
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<div class="input-group">
-																			<input type="email" class="form-control"
-																				placeholder="Email" name="email"
-																				onchange="validateEmailAdd();">
-																		</div>
-																	</div>
-
-																	<div class="form-group">
-																		<div class="input-group">
-																			<input type="number" class="form-control"
-																				placeholder="Əlaqə nömrəsi daxil edin"
-																				name="number">
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<div class="input-group">
-																			<input type="password" class="form-control"
-																				placeholder="Şifrə" name="password"
-																				onchange="validatePasswordAdd();">
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<div class="input-group">
-																			<input type="password" class="form-control"
-																				placeholder="Şifrəni təkrar yazın"
-																				name="password">
-																		</div>
-																	</div>
-																</form>
-
-																<button type="submit"
-																	class="btn btn-outline submit-btn w-100 shadow btn-one"
-																	data-style="zoom-out">Qeydiyyat</button>
-															</div>
-														</div>
-
-													</div>
-													<div class="modal-footer justify-content-center">
-														<a href="#" id="login-from-register-non-dealer"
-															class="text-decoration-none text-primary modal-chooser-button"
-															data-target="#login_page" data-toggle="modal">Saytda
-															qeydiyyasınız varsa,daxil olun</a>
-													</div>
-
-												</div>
-											</div>
-										</div>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-5">
-							<ul
-								class="nav  d-lg-flex justify-content-between align-items-center navbar-top-links navbar-right">
-								<li>
-									<a href="./" class="text-decoration-none" data-toggle="modal"
-										data-target=".exampleModallogin">
-
-										<button class="add-btn add-btn-1 d-flex align-items-center  ">
-											<i class="fas fa-plus text-white mr-2" style="font-size: 8px; "></i>
-											<span class="fs-lg-14 ">Elan yerləşdir</span>
-										</button>
-									</a>
-								</li>
-								<li>
-									<div class="hamburger hamburger--spring position-relative z-middle " id="open_menu"
-										style="top: -4px;">
-										<div class="hamburger-box">
-											<div class="hamburger-inner z-middle"></div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+			<div class="row d-flex justify-content-between mt-3 mb-4">
+			<div class="col-3 d-flex">
+			<a href="./index.html"><img src="./img/logonumber.png" class="" style="width: 60px;" alt=""></a>
 			</div>
-		</div>
+			<div class="col-2">
+			
+			</div>
+			<div class="col-3 d-flex justify-content-end">
+			<div class="hamburger hamburger--spring position-relative z-middle " id="open_menu">
+			<div class="hamburger-box">
+			<div class="hamburger-inner z-middle"></div>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="row d-flex justify-content-between">
+			<div class="col-xs-12 col-md-6 my-3">
+			<div class="row d-flex justify-xs-content-between">
+			<div class="col-5">
+			<ul class="nav d-lg-flex align-items-center navbar-top-links navbar-right">
+			<li class="list-unstyled justify-content-start">
+			<a href="#" class="text-decoration-none d-flex align-items-center py-2 px-3"
+			style="border: 1px solid #22BEA5;" data-toggle="modal"
+			data-target=".exampleModallogin">
+			<span class="fs-lg-14 text-dark ">Daxil olun</span>
+			</a>
+			</li>
+			<div class="modal shadow rounded fade exampleModallogin my-5 z-high in"
+			id="login_page" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+			aria-hidden="false">
+			<div class="modal-dialog" role="document">
+			<div class="modal-content">
+			<div class="modal-header justify-content-center py-3">
+			<div class="modal-title text-center" id="exampleModalLabelLogin">
+			<h5>www.nomre.net'a Daxil olun</h5>
+			<p class="m-0">Ən yaxşı nömrələri ən uyğun qiymətlərə tapın!
+			</p>
+			</div>
+			
+			</div>
+			<div class="modal-body p-3">
+			<div class="row d-flex justify-content-center">
+			<div class="col-10 text-center">
+			<form action="" id="requestacallformLogin" method="POST"
+			name="requesttacallform">
+			<div class="form-group">
+			<div class="input-group">
+			<input type="email" class="form-control"
+			placeholder="Email" name="email"
+			onchange="validateEmailAdd();" />
+			</div>
+			</div>
+			<div class="form-group">
+			<div class="input-group">
+			<input type="password" class="form-control"
+			placeholder="Şifrə" name="password"
+			onchange="validatePasswordAdd();" />
+			</div>
+			</div>
+			</form>
+			<div class="row mb-4 ">
+			<div class="col-md-6 d-flex justify-content-center">
+			
+			<div class="form-check pl-0 mb-3">
+			<input type="checkbox"
+			class="form-check-input filled-in" id="new">
+			<label
+			class=" form-check-label small card card-animate-link-secondary"
+			for="new">Məni xatirla</label>
+			</div>
+			
+			</div>
+			
+			<div class="col-md-6 ">
+			<a href="#!"
+			class=" text-decoration-none fs-lg-14">Şifrəni
+			unutmusuz?</a>
+			</div>
+			</div>
+			<button type="submit"
+			class="btn btn-outline submit-btn w-100 shadow btn-one">Daxil
+			olun</button>
+			</div>
+			</div>
+			
+			</div>
+			<div class="modal-footer justify-content-center">
+			<a href="#"
+			class="text-decoration-none fs-md-14 text-primary modal-chooser-button"
+			data-target="#register_page" data-toggle="modal"> Saytda
+			hesabınız yoxdursa, qeydiyyatdan keçin</a>
+			</div>
+			
+			</div>
+			</div>
+			</div>
+			</ul>
+			</div>
+			<div class="col-5 d-flex justify-content-end">
+			<ul class="nav d-lg-flex align-items-center navbar-top-links navbar-right">
+			
+			<li class="list-unstyled ">
+			<a href="#" class="text-decoration-none d-flex align-items-center py-2 px-3"
+			style="border: 1px solid #22BEA5;" data-toggle="modal"
+			data-target=".exampleModalChoose">
+			<span class="fs-lg-14 text-dark ">Qeydiyyat</span>
+			</a>
+			</li>
+			<div class="modal shadow rounded fade exampleModalChoose my-5 z-high in"
+			id="register_page" tabindex="-1" role="dialog"
+			aria-labelledby="exampleModalLabelSignup" aria-hidden="false">
+			<div class="modal-dialog" role="document">
+			<div class="modal-content">
+			<div class="modal-header justify-content-center fs-md-14">
+			<div class="modal-title text-center" id="exampleModalLabelSignup">
+			<p class="m-0 py-2">
+			Saytda qeydiyyatdan keçdikdən sonra satdığınız və ya
+			almaq istədiyiniz nömrənin elanını verə bilərsiz.
+			</p>
+			</div>
+			
+			</div>
+			<div class="modal-body p-3">
+			<div class="row my-5">
+			<div class="col-6">
+			<a type="submit"
+			class="btn btn-outline bg-purple text-white w-100 shadow modal-chooser-button"
+			data-target=".dillerModal" data-toggle="modal">Dillerlər</a>
+			</div>
+			<div class="col-6">
+			<a type="submit"
+			class="btn btn-outline bg-purple text-white w-100 shadow modal-chooser-button"
+			data-target=".dillerOlmayanModal" data-toggle="modal">Diller
+			Olmayan</a>
+			</div>
+			</div>
+			</div>
+			<div class="modal-footer justify-content-center">
+			<a href="#" id="login-from-chooser"
+			class="text-decoration-none text-primary modal-chooser-button"
+			data-target="#login_page" data-toggle="modal">Saytda
+			qeydiyyasınız varsa,daxil olun</a>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="modal shadow rounded fade dillerModal my-5 z-high in" id="register_page"
+			tabindex="-1" role="dialog" aria-hidden="false">
+			<div class="modal-dialog" role="document">
+			<div class="modal-content">
+			<div class="modal-header justify-content-center fs-md-14">
+			<div class="modal-title text-center">
+			<p class="m-0">Saytda qeydiyyatdan keçdikdən sonra
+			satdığınız və ya
+			almaq
+			istədiyiniz nömrənin elanını verə bilərsiz.
+			</p>
+			</div>
+			
+			</div>
+			<div class="modal-body p-3">
+			<div class="row d-flex justify-content-center">
+			<div class="col-10 text-center">
+			<form action="" id="requestacallformSignup" method="POST"
+			class="needs-validation" novalidate
+			name="requesttacallform">
+			<div class="row">
+			<div class="col-6">
+			<div class="form-group">
+			<div class="input-group">
+			<input type="text" class="form-control"
+			placeholder="Ad" name="text">
+			</div>
+			</div>
+			</div>
+			<div class="col-6">
+			<div class="form-group">
+			<div class="input-group">
+			<input type="text" class="form-control"
+			placeholder="Soyad" name="text">
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="form-group">
+			<div class="input-group">
+			<input type="email" class="form-control"
+			placeholder="Email" name="email"
+			onchange="validateEmailAdd();">
+			</div>
+			</div>
+			
+			<div class="form-group">
+			<div class="input-group">
+			<input type="number" class="form-control"
+			placeholder="Əlaqə nömrəsi daxil edin"
+			name="number">
+			</div>
+			</div>
+			<div class="form-group">
+			<div class="input-group">
+			<input type="text" class="form-control"
+			placeholder="Ünvan" name="text">
+			</div>
+			</div>
+			<div class="form-group">
+			<div class="input-group">
+			<input type="password" class="form-control"
+			placeholder="Şifrə" name="password"
+			onchange="validatePasswordAdd();">
+			</div>
+			</div>
+			<div class="form-group">
+			<div class="input-group">
+			<input type="password" class="form-control"
+			placeholder="Şifrəni təkrar yazın"
+			name="password">
+			</div>
+			</div>
+			</form>
+			
+			<button type="submit"
+			class="btn btn-outline submit-btn w-100 shadow btn-one"
+			data-style="zoom-out">Qeydiyyat</button>
+			</div>
+			</div>
+			
+			</div>
+			<div class="modal-footer justify-content-center">
+			<a href="#" id="login-from-register-dealer"
+			class="text-decoration-none text-primary modal-chooser-button"
+			data-target="#login_page" data-toggle="modal">Saytda
+			qeydiyyasınız varsa,daxil olun</a>
+			</div>
+			
+			</div>
+			</div>
+			</div>
+			<div class="modal shadow rounded fade dillerOlmayanModal my-5 z-high in"
+			id="register_page" tabindex="-1" role="dialog" aria-hidden="false">
+			<div class="modal-dialog" role="document">
+			<div class="modal-content">
+			<div class="modal-header justify-content-center fs-md-14">
+			<div class="modal-title text-center">
+			<p class="m-0">Saytda qeydiyyatdan keçdikdən sonra
+			satdığınız və ya
+			almaq
+			istədiyiniz nömrənin elanını verə bilərsiz.
+			</p>
+			</div>
+			
+			</div>
+			<div class="modal-body p-3">
+			<div class="row d-flex justify-content-center">
+			<div class="col-10 text-center">
+			<form action="" id="requestacallformSignup" method="POST"
+			class="needs-validation" novalidate
+			name="requesttacallform">
+			<div class="row">
+			<div class="col-6">
+			<div class="form-group">
+			<div class="input-group">
+			<input type="text" class="form-control"
+			placeholder="Ad" name="text">
+			</div>
+			</div>
+			</div>
+			<div class="col-6">
+			<div class="form-group">
+			<div class="input-group">
+			<input type="text" class="form-control"
+			placeholder="Soyad" name="text">
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="form-group">
+			<div class="input-group">
+			<input type="email" class="form-control"
+			placeholder="Email" name="email"
+			onchange="validateEmailAdd();">
+			</div>
+			</div>
+			
+			<div class="form-group">
+			<div class="input-group">
+			<input type="number" class="form-control"
+			placeholder="Əlaqə nömrəsi daxil edin"
+			name="number">
+			</div>
+			</div>
+			<div class="form-group">
+			<div class="input-group">
+			<input type="password" class="form-control"
+			placeholder="Şifrə" name="password"
+			onchange="validatePasswordAdd();">
+			</div>
+			</div>
+			<div class="form-group">
+			<div class="input-group">
+			<input type="password" class="form-control"
+			placeholder="Şifrəni təkrar yazın"
+			name="password">
+			</div>
+			</div>
+			</form>
+			
+			<button type="submit"
+			class="btn btn-outline submit-btn w-100 shadow btn-one"
+			data-style="zoom-out">Qeydiyyat</button>
+			</div>
+			</div>
+			
+			</div>
+			<div class="modal-footer justify-content-center">
+			<a href="#" id="login-from-register-non-dealer"
+			class="text-decoration-none text-primary modal-chooser-button"
+			data-target="#login_page" data-toggle="modal">Saytda
+			qeydiyyasınız varsa,daxil olun</a>
+			</div>
+			
+			</div>
+			</div>
+			</div>
+			</ul>
+			</div>
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-md-3 d-flex justify-content-end my-3">
+			<a href="./" class="text-decoration-none" data-toggle="modal" data-target=".exampleModallogin">
+			<button class="add-btn add-btn-1 d-flex align-items-center ">
+			<i class="fas fa-plus text-white mr-2" style="font-size: 8px; "></i>
+			<span class="fs-lg-14 ">Elan yerləşdir</span>
+			</button>
+			</a>
+			</div>
+			</div>
+			</div>
 	</header>
 
 	<div id="mobile_menu" class="bg-purple z-100 position-absolute left-100 w-100 t-5 h-120vh top-0 pt-100">
@@ -547,25 +527,25 @@
 						<div id="number_search" class="my-2 col-lg-4 col-md-10 d-flex justify-content-between">
 							<input type="tel" id="number1" name="number1" pattern="[0-9]*" value=""
 								class="number-search inputs inpt2 shadow text-center border rounded" placeholder="X"
-								onkeydown="keyPr(event, 1);">
+								onkeyup="keyPr(event, 1);">
 							<input type="tel" id="number2" name="number2" pattern="[0-9]*" value=""
 								class="number-search inputs inpt2 shadow text-center border rounded" placeholder="X"
-								onkeydown="keyPr(event, 2);">
+								onkeyup="keyPr(event, 2);">
 							<input type="tel" id="number3" name="number3" pattern="[0-9]*" value=""
 								class="number-search inputs inpt2 shadow text-center border rounded" placeholder="X"
-								onkeydown="keyPr(event, 3);">
+								onkeyup="keyPr(event, 3);">
 							<input type="tel" id="number4" name="number4" pattern="[0-9]*" value=""
 								class="number-search inputs inpt2 shadow text-center border rounded" placeholder="X"
-								onkeydown="keyPr(event, 4);">
+								onkeyup="keyPr(event, 4);">
 							<input type="tel" id="number5" name="number5" pattern="[0-9]*" value=""
 								class="number-search inputs inpt2 shadow text-center border rounded" placeholder="X"
-								onkeydown="keyPr(event, 5);">
+								onkeyup="keyPr(event, 5);">
 							<input type="tel" id="number6" name="number6" pattern="[0-9]*" value=""
 								class="number-search inputs inpt2 shadow text-center border rounded" placeholder="X"
-								onkeydown="keyPr(event, 6);">
+								onkeyup="keyPr(event, 6);">
 							<input type="tel" id="number7" name="number7" pattern="[0-9]*" value=""
 								class="number-search inputs inpt2 shadow text-center border rounded" placeholder="X"
-								onkeydown="keyPr(event, 7);">
+								onkeyup="keyPr(event, 7);">
 						</div>
 						<div class=" my-2 col-lg-2 col-md-6 col-xs-6 w-100">
 							<button type="submit" onclick="alertFunction()"
@@ -1771,7 +1751,6 @@
 			//48 - 0
 			// 8 - backspace
 			//46 - delete
-			var evt = e || window.event;
 
 
 			if ((ev.keyCode > 47 && ev.keyCode < 58) || (ev.keyCode > 95 && ev.keyCode < 106)) {
@@ -1790,9 +1769,7 @@
 				}
 			} else {
 				document.getElementById("number" + ind).value = '';
-
 			}
-
 			return false;
 		}
 
